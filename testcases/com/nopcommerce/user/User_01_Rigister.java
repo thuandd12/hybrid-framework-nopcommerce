@@ -31,10 +31,11 @@ public class User_01_Rigister {
 		lastName = "thuan";
 		emailAddress = "thuan" + generateFakeNumber() + "@gmail.com";
 		password = "123456";
-		
+		wrongPassword = "1238283182";
+		lessThanSixCharacterPassword = "1234";
   }
   @Test
-  public void TC_01_Register_With_Empty_Data() {
+  public void Register_01_Empty_Data() {
 	  homePage.clickToRegisterLink();
 	  registerPage.clickRegisterButton();
 	  Assert.assertEquals(registerPage.getErrorMessageAtFristNameTextbox(), "First name is required.");
@@ -45,7 +46,7 @@ public class User_01_Rigister {
 	  
   }
   @Test
-  public void TC_02_Register_With_Invalid_Email() {
+  public void Register_02_Invalid_Email() {
 	  homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
@@ -56,7 +57,7 @@ public class User_01_Rigister {
 	  Assert.assertEquals(registerPage.getErrorMessageAtEmailTextbox(), "Wrong email");
   }
   @Test
-  public void TC_03_Register_With_Valid_Information() {
+  public void Register_03_Valid_Information() {
 	  homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
@@ -68,37 +69,39 @@ public class User_01_Rigister {
 	  
   }
   @Test
-  public void TC_04_Register_With_Email_Already_Exists() {
+  public void Register_04_Email_Already_Exists() {
 	  registerPage.clickLogoutLink();
 	  homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
 	  registerPage.inputToPasswordTextbox(password);
-	  registerPage.inputConfirmPasswordTextbox("31244113");
+	  registerPage.inputConfirmPasswordTextbox(password);
 	  registerPage.clickRegisterButton();
+	  Assert.assertEquals(registerPage.getExistsEmailErrorMessage(), "The specified email already exists");
 	 
   }
   @Test
-  public void TC_05_Register_With_Password_Less_Than_6_Characters() {
+  public void Register_05_Password_Less_Than_6_Characters() {
 	  homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
-	  registerPage.inputToPasswordTextbox("1234");
-	  registerPage.inputConfirmPasswordTextbox("1234");
+	  registerPage.inputToPasswordTextbox(lessThanSixCharacterPassword);
+	  registerPage.inputConfirmPasswordTextbox(lessThanSixCharacterPassword);
 	  registerPage.clickRegisterButton();
-	  Assert.assertEquals(registerPage.getMissingCharactersPasswordErrorMessage(), "must have at least 6 characters");
+	  Assert.assertEquals(registerPage.getErrorMessageAtPasswordTextbox(), "Password must meet the following rules:\nmust have at least 6 characters");
   }
   @Test
-  public void TC_06_Register_With_Password_Other_Confirm_Password() {
+  public void Register_06_Password_Other_Confirm_Password() {
 	  homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
-	  registerPage.inputToPasswordTextbox("1234");
-	  registerPage.inputConfirmPasswordTextbox("1234");
+	  registerPage.inputToPasswordTextbox(password);
+	  registerPage.inputConfirmPasswordTextbox(wrongPassword);
 	  registerPage.clickRegisterButton();
+	  Assert.assertEquals(registerPage.getErrorMessageAtConfirmPasswordTextbox(), "The password and confirmation password do not match.");
   }
 
   @AfterClass
@@ -106,7 +109,7 @@ public class User_01_Rigister {
 	  driver.quit();
   }
   private WebDriver driver;
-  private String firstName,lastName,emailAddress,password;
+  private String firstName,lastName,emailAddress,password,wrongPassword,lessThanSixCharacterPassword;
   private HomePageObject homePage;
   private RegisterPageObject registerPage;
   private String projectPath = System.getProperty("user.dir");

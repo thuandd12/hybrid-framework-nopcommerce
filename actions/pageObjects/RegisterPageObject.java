@@ -71,9 +71,5 @@ public class RegisterPageObject extends BasePage {
 		waitForElementVisible(driver, RegisterPageUI.EXISTS_EMAIL_ERROR_MESSAGE);
 		return getElementText(driver,  RegisterPageUI.EXISTS_EMAIL_ERROR_MESSAGE);
 	}
-	public String getMissingCharactersPasswordErrorMessage() {
-		waitForElementVisible(driver, RegisterPageUI.MISSING_CHARACTERS_PASSWORD_ERROR_MESSAGE);
-		return getElementText(driver,  RegisterPageUI.MISSING_CHARACTERS_PASSWORD_ERROR_MESSAGE);
-	}
 
 }
