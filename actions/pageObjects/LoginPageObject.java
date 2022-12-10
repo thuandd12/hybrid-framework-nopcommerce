@@ -42,6 +42,12 @@ public class LoginPageObject extends BasePage {
 		waitForElementVisible(driver, LoginPageUI.UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 		return getElementText(driver, LoginPageUI.UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 	}
+
+	public boolean isMyAccountLinKDisplay() {
+		waitForElementVisible(driver, LoginPageUI.MYACCOUNT_LINK);
+		return isElementDisplay(driver, LoginPageUI.MYACCOUNT_LINK);
+		
+	}
 	
 
 }

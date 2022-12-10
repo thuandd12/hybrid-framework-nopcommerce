@@ -94,6 +94,7 @@ public class User_02_LogIn {
 	  loginPage.sendKeyToEmailTextBox(registeredEmail);
 	  loginPage.sendKeyToPasswordTextBox(password);
 	  loginPage.clickToLoginButton();
+	  loginPage.isMyAccountLinKDisplay();
   }
 
   @AfterClass
