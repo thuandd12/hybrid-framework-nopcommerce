@@ -9,9 +9,10 @@ public class RegisterPageObject extends BasePage {
 	public RegisterPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
-	public void clickRegisterButton() {
+	public RegisterPageObject clickRegisterButton() {
 		waitForElementClickable(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
+		return PageGeneratorManager.getRegisterPage(driver);
 	}
 	public String getErrorMessageAtFristNameTextbox() {
 		waitForElementVisible(driver, RegisterPageUI.FIRTNAME_ERROR_MESSAGE_TEXTBOX);
@@ -63,9 +64,10 @@ public class RegisterPageObject extends BasePage {
 		waitForElementVisible(driver, RegisterPageUI.REGISTER_SUCCESS_MESSAGE);
 		return getElementText(driver, RegisterPageUI.REGISTER_SUCCESS_MESSAGE);
 	}
-	public void clickLogoutLink() {
+	public RegisterPageObject clickLogoutLink() {
 		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
+		return PageGeneratorManager.getRegisterPage(driver);
 	}
 	public String getExistsEmailErrorMessage() {
 		waitForElementVisible(driver, RegisterPageUI.EXISTS_EMAIL_ERROR_MESSAGE);

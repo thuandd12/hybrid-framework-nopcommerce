@@ -1,31 +1,23 @@
 package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
+import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
-
 import org.testng.annotations.BeforeClass;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
+import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class User_02_LogIn {
-	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", projectPath + "\\brownserDrivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+public class User_02_LogIn extends BaseTest {
+	@Parameters("browser")
+	@BeforeClass
+  public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
+		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		firstName = "duc";
 		lastName = "thuan";
@@ -35,8 +27,8 @@ public class User_02_LogIn {
 		wrongEmail = "123123";
 		wrongPassword = "123321";
 		
-		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePage = homePage.clickToRegisterLink();
+		registerPage = PageGeneratorManager.getRegisterPage(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(registeredEmail);
@@ -48,53 +40,52 @@ public class User_02_LogIn {
   }
   @Test
   public void Login_01_Empty_Data() {
-	  registerPage.clickLogoutLink();
-	  homePage = new HomePageObject(driver);
-	  homePage.clickToLoginLink();
-	  loginPage = new LoginPageObject(driver);
-	  loginPage.clickToLoginButton();
+	  registerPage = registerPage.clickLogoutLink();
+	  homePage = homePage.clickToLoginLink();
+	  loginPage = PageGeneratorManager.getLoginPage(driver);
+	  loginPage = loginPage.clickToLoginButton();
 	  Assert.assertEquals(loginPage.getErrorMessageAtEmailTextbox(), "Please enter your email");
 	  
   }
   @Test
   public void Login_02_Wrong_Email() {
-	  homePage.clickToLoginLink();
+	  homePage = homePage.clickToLoginLink();
 	  loginPage.sendKeyToEmailTextBox(wrongEmail);
 	  loginPage.sendKeyToPasswordTextBox(password);
-	  loginPage.clickToLoginButton();
+	  loginPage = loginPage.clickToLoginButton();
 	  Assert.assertEquals(loginPage.getErrorMessageAtEmailTextbox(), "Wrong email");
   }
   @Test
   public void Login_03_Valid_Unregister_Email() {
-	  homePage.clickToLoginLink();
+	  homePage = homePage.clickToLoginLink();
 	  loginPage.sendKeyToEmailTextBox(unRegisterEmail);
 	  loginPage.sendKeyToPasswordTextBox(password);
-	  loginPage.clickToLoginButton();
+	  loginPage = loginPage.clickToLoginButton();
 	  Assert.assertEquals(loginPage.getErrorMessageUnregisterEmail(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
   }
   @Test
   public void Login_04_Registered_Email_Do_Not_Enter_Password() {
-	  homePage.clickToLoginLink();
+	  homePage = homePage.clickToLoginLink();
 	  loginPage.sendKeyToEmailTextBox(registeredEmail);
-	  loginPage.clickToLoginButton();
+	  loginPage = loginPage.clickToLoginButton();
 	  Assert.assertEquals(loginPage.getErrorMessageUnregisterEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
 	  
   }
   @Test
   public void Login_05_Registered_Email_Wrong_Password() {
-	  homePage.clickToLoginLink();
+	  homePage = homePage.clickToLoginLink();
 	  loginPage.sendKeyToEmailTextBox(registeredEmail);
 	  loginPage.sendKeyToPasswordTextBox(wrongPassword);
-	  loginPage.clickToLoginButton();
+	  loginPage = loginPage.clickToLoginButton();
 	  Assert.assertEquals(loginPage.getErrorMessageUnregisterEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
   }
   @Test
   public void Login_06_Registered_Email_Enter_The_Correct_Password() {
-	  homePage.clickToLoginLink();
+	  homePage = homePage.clickToLoginLink();
 	  loginPage.sendKeyToEmailTextBox(registeredEmail);
 	  loginPage.sendKeyToPasswordTextBox(password);
-	  loginPage.clickToLoginButton();
-	  loginPage.isMyAccountLinKDisplay();
+	  loginPage = loginPage.clickToLoginButton();
+	  Assert.assertTrue(homePage.isMyAccountLinKDisplay());
   }
 
   @AfterClass
@@ -106,10 +97,5 @@ public class User_02_LogIn {
   private HomePageObject homePage;
   private RegisterPageObject registerPage;
   private LoginPageObject loginPage;
-  private String projectPath = System.getProperty("user.dir");
-  public int generateFakeNumber() {
-	  Random rand = new Random();
-	  return rand.nextInt(9999);
-  }
 
 }

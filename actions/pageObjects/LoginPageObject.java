@@ -12,9 +12,10 @@ public class LoginPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public void clickToLoginButton() {
+	public LoginPageObject clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		return PageGeneratorManager.getLoginPage(driver);
 	}
 
 	public String getErrorMessageAtEmailTextbox() {
@@ -42,12 +43,5 @@ public class LoginPageObject extends BasePage {
 		waitForElementVisible(driver, LoginPageUI.UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 		return getElementText(driver, LoginPageUI.UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 	}
-
-	public boolean isMyAccountLinKDisplay() {
-		waitForElementVisible(driver, LoginPageUI.MYACCOUNT_LINK);
-		return isElementDisplay(driver, LoginPageUI.MYACCOUNT_LINK);
-		
-	}
-	
 
 }

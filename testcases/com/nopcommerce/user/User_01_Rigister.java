@@ -1,31 +1,24 @@
 package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
+
+import commons.BaseTest;
 import pageObjects.HomePageObject;
+import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
-
 import org.testng.annotations.BeforeClass;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
+import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class User_01_Rigister {
+public class User_01_Rigister extends BaseTest  {
 	
- 
-  @BeforeClass
-  public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", projectPath + "\\brownserDrivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
+	@Parameters("browser")
+	@BeforeClass
+  public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
+		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		firstName = "duc";
 		lastName = "thuan";
@@ -36,8 +29,9 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_01_Empty_Data() {
-	  homePage.clickToRegisterLink();
-	  registerPage.clickRegisterButton();
+	  homePage = homePage.clickToRegisterLink();
+	  registerPage = PageGeneratorManager.getRegisterPage(driver);
+	  registerPage = registerPage.clickRegisterButton();
 	  Assert.assertEquals(registerPage.getErrorMessageAtFristNameTextbox(), "First name is required.");
 	  Assert.assertEquals(registerPage.getErrorMessageAtLastNameTextbox(), "Last name is required.");
 	  Assert.assertEquals(registerPage.getErrorMessageAtEmailTextbox(), "Email is required.");
@@ -47,7 +41,7 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_02_Invalid_Email() {
-	  homePage.clickToRegisterLink();
+	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox("1233");
@@ -58,7 +52,7 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_03_Valid_Information() {
-	  homePage.clickToRegisterLink();
+	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
@@ -70,8 +64,8 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_04_Email_Already_Exists() {
-	  registerPage.clickLogoutLink();
-	  homePage.clickToRegisterLink();
+	  registerPage = registerPage.clickLogoutLink();
+	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
@@ -83,7 +77,7 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_05_Password_Less_Than_6_Characters() {
-	  homePage.clickToRegisterLink();
+	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
@@ -94,7 +88,7 @@ public class User_01_Rigister {
   }
   @Test
   public void Register_06_Password_Other_Confirm_Password() {
-	  homePage.clickToRegisterLink();
+	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
 	  registerPage.inputToEmailTextbox(emailAddress);
@@ -112,10 +106,5 @@ public class User_01_Rigister {
   private String firstName,lastName,emailAddress,password,wrongPassword,lessThanSixCharacterPassword;
   private HomePageObject homePage;
   private RegisterPageObject registerPage;
-  private String projectPath = System.getProperty("user.dir");
-  public int generateFakeNumber() {
-	  Random rand = new Random();
-	  return rand.nextInt(9999);
-  }
 
 }
