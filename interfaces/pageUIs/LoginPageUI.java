@@ -8,5 +8,4 @@ public class LoginPageUI {
 	public static final String PASSWORD_TEXTBOX = "//input[@class='password']";
 	public static final String REGISTERED_EMAIL_ERROR_MESSAGE_TEXTBOX = "//input[@class='password']";
 
-
 }
