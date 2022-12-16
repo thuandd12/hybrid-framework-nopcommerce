@@ -8,18 +8,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.AddressesPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointsPageObject;
+import pageObjectsNopcommerce.user.UserAddressesPageObject;
+import pageObjectsNopcommerce.user.UserCustomerInfoPageObject;
+import pageObjectsNopcommerce.user.UserHomePageObject;
+import pageObjectsNopcommerce.user.UserLoginPageObject;
+import pageObjectsNopcommerce.user.PageGeneratorManager;
+import pageObjectsNopcommerce.user.UserRegisterPageObject;
+import pageObjectsNopcommerce.user.UserRewardPointsPageObject;
 
 public class Switch_Page_UI extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
-  public void beforeClass(String browserName) {
+  public void beforeClass (String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getHomePage(driver);
 		
@@ -41,7 +41,7 @@ public class Switch_Page_UI extends BaseTest {
   }
 
 	@Test
-	  public void Login_01_Swi() {
+	  public void Switch_Page() {
 		homePage = homePage.clickMyAccountLink();
 		
 		customerInfoPage = PageGeneratorManager.getCustomerInfoPage(driver);
@@ -56,16 +56,16 @@ public class Switch_Page_UI extends BaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.quit();
+		 driver.quit();
 	}
 
 	private WebDriver driver;
 	private String firstName, lastName, registeredEmail, password;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private AddressesPageObject addressesPage;
-	private RewardPointsPageObject rewardPointsPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserAddressesPageObject addressesPage;
+	private UserRewardPointsPageObject rewardPointsPage;
 
 }

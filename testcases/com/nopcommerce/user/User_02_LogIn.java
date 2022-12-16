@@ -2,10 +2,11 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import pageObjectsNopcommerce.user.UserHomePageObject;
+import pageObjectsNopcommerce.user.UserLoginPageObject;
+import pageObjectsNopcommerce.user.PageGeneratorManager;
+import pageObjectsNopcommerce.user.UserRegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
@@ -40,7 +41,7 @@ public class User_02_LogIn extends BaseTest {
   }
   @Test
   public void Login_01_Empty_Data() {
-	  registerPage = registerPage.clickLogoutLink();
+	  homePage = homePage.clickLogoutLink(driver);
 	  homePage = homePage.clickToLoginLink();
 	  loginPage = PageGeneratorManager.getLoginPage(driver);
 	  loginPage = loginPage.clickToLoginButton();
@@ -94,8 +95,8 @@ public class User_02_LogIn extends BaseTest {
   }
   private WebDriver driver;
   private String firstName,lastName,registeredEmail,unRegisterEmail,wrongEmail,password,wrongPassword;
-  private HomePageObject homePage;
-  private RegisterPageObject registerPage;
-  private LoginPageObject loginPage;
+  private UserHomePageObject homePage;
+  private UserRegisterPageObject registerPage;
+  private UserLoginPageObject loginPage;
 
 }

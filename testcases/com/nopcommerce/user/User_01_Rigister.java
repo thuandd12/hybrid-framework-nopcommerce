@@ -3,9 +3,10 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import pageObjectsNopcommerce.user.UserHomePageObject;
+import pageObjectsNopcommerce.user.PageGeneratorManager;
+import pageObjectsNopcommerce.user.UserRegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
@@ -64,7 +65,7 @@ public class User_01_Rigister extends BaseTest  {
   }
   @Test
   public void Register_04_Email_Already_Exists() {
-	  registerPage = registerPage.clickLogoutLink();
+	  homePage = homePage.clickLogoutLink(driver);
 	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);
@@ -104,7 +105,7 @@ public class User_01_Rigister extends BaseTest  {
   }
   private WebDriver driver;
   private String firstName,lastName,emailAddress,password,wrongPassword,lessThanSixCharacterPassword;
-  private HomePageObject homePage;
-  private RegisterPageObject registerPage;
+  private UserHomePageObject homePage;
+  private UserRegisterPageObject registerPage;
 
 }

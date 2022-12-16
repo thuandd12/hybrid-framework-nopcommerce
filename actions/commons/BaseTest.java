@@ -44,7 +44,7 @@ public class BaseTest {
 			throw new RuntimeException("Browser name invalid.");
 		}
 		driverBaseTest.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driverBaseTest.get("https://demo.nopcommerce.com/");
+		driverBaseTest.get(GlobleConstaints.PORTAL_PAGE_URL);
 		return driverBaseTest;
 	}
 	protected int generateFakeNumber() {
