@@ -43,6 +43,13 @@ public class UserLoginPageObject extends BasePage {
 		waitForElementVisible(driver, UserLoginPageUI.USER_UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 		return getElementText(driver, UserLoginPageUI.USER_UNREGISTER_EMAIL_ERROR_MESSAGE_TEXTBOX);
 	}
+	public UserLoginPageObject loginPageNop (String emailValue, String passwordValue) {
+		sendKeyToEmailTextBox(emailValue);
+		sendKeyToPasswordTextBox(passwordValue);
+		clickToLoginButton();
+		return PageGeneratorManager.getLoginPage(driver);
+	}
+
 
 
 }

@@ -32,9 +32,14 @@ public class UserHomePageObject extends BasePage {
 		clickToElement(driver, UserHomePageUI.MYACCOUNT_LINK);
 		return PageGeneratorManager.getHomePage(driver);
 	}
-	public UserHomePageObject clickLogoutLink(WebDriver driver) {
-		waitForElementClickable(driver,UserHomePageUI.LOGOUT_LINK);
-		clickToElement(driver,UserHomePageUI.LOGOUT_LINK);
+	public UserHomePageObject goToHomePage(WebDriver driver) {
+		waitForElementClickable(driver,UserHomePageUI.GOTOHOMEPAGELINK);
+		clickToElement(driver,UserHomePageUI.GOTOHOMEPAGELINK);
+		return PageGeneratorManager.getHomePage(driver);
+	}
+	public UserHomePageObject clickToLogoutLink() {
+		waitForElementClickable(driver, UserHomePageUI.LOGOUT_LINK);
+		clickToElement(driver, UserHomePageUI.LOGOUT_LINK);
 		return PageGeneratorManager.getHomePage(driver);
 	}
 	

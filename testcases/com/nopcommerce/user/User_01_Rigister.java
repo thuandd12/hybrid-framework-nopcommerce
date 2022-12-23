@@ -65,7 +65,7 @@ public class User_01_Rigister extends BaseTest  {
   }
   @Test
   public void Register_04_Email_Already_Exists() {
-	  homePage = homePage.clickLogoutLink(driver);
+	  homePage = homePage.goToHomePage(driver);
 	  homePage = homePage.clickToRegisterLink();
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  registerPage.inputToLastNameTextbox(lastName);

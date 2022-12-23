@@ -37,8 +37,22 @@ public class BasePage {
 	public String getTitle(WebDriver driver) {
 		return driver.getTitle();
 	}
-	private By getByXpath(String xpathLocator) {
-		return By.xpath(xpathLocator);
+	private By getByLocator(String locatorType) {
+		By by = null;
+		if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")) {
+			by=By.id(locatorType.substring(3));
+		} else if (locatorType.startsWith("class=") || locatorType.startsWith("Class=") || locatorType.startsWith("CLASS=")){
+			by=By.className(locatorType.substring(6));
+		} else if (locatorType.startsWith("name=") || locatorType.startsWith("Name=") || locatorType.startsWith("NAME=")) {
+			by=By.name(locatorType.substring(5));
+		}else if (locatorType.startsWith("css=") || locatorType.startsWith("Css=") || locatorType.startsWith("CSS=")) {
+			by=By.cssSelector(locatorType.substring(4));
+		}else if (locatorType.startsWith("xpath=") || locatorType.startsWith("Xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("XPath=") || locatorType.startsWith("XpatH=")) {
+			by=By.xpath(locatorType.substring(6));
+		}else  {
+			throw new RuntimeException("Locator type is not supported");
+		}
+		return by;
 	}
 	public String getCurrentUrl(WebDriver driver) {
 		return driver.getCurrentUrl();
@@ -101,10 +115,10 @@ public class BasePage {
 		}
 	}
 	private WebElement getWebElement(WebDriver driver,String xpathLocator) {
-		return driver.findElement(getByXpath(xpathLocator));
+		return driver.findElement(getByLocator(xpathLocator));
 	}
 	private List<WebElement> getListWebElement(WebDriver driver,String xpathLocator) {
-		return driver.findElements(getByXpath(xpathLocator));
+		return driver.findElements(getByLocator(xpathLocator));
 	}
 	public void clickToElement(WebDriver driver,String xpathLocator) {
 		getWebElement(driver, xpathLocator).click();
@@ -140,7 +154,7 @@ public class BasePage {
 		getWebElement(driver, parentXpath).click();
 		sleepInsecond(1);
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		List <WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childXpath)));
+		List <WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childXpath)));
 		for (WebElement item : allItems) {
 			if (item.getText().trim().equals(expectedTextItem)) {
 				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -253,15 +267,15 @@ public class BasePage {
 	}
 	public void waitForElementVisible(WebDriver driver,String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByXpath(xpathLocator)));
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(xpathLocator)));
 	}
 	public void waitForAllElementVisible(WebDriver driver,String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathLocator)));
+		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(xpathLocator)));
 	}
 	public void waitForElementInVisible(WebDriver driver,String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(xpathLocator)));
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(xpathLocator)));
 	}
 	public void waitForAllElementInVisible(WebDriver driver,String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
@@ -269,7 +283,7 @@ public class BasePage {
 	}
 	public void waitForElementClickable(WebDriver driver,String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
+		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(xpathLocator)));
 	}
 	private long longTimeOut = 30;
 	public UserCustomerInfoPageObject openCustomerInfoPage (WebDriver driver) {

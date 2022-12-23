@@ -41,14 +41,14 @@ public class Switch_Roll extends BaseTest {
 		registerPage.inputConfirmPasswordTextbox(userPassword);
 		registerPage.clickRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccesMessage(), "Your registration completed");
-		homePage = homePage.clickLogoutLink(driver);
+		homePage = homePage.goToHomePage(driver);
 		homePage = homePage.clickToLoginLink();
 		userLoginPage = PageGeneratorManager.getLoginPage(driver);
 		userLoginPage.sendKeyToEmailTextBox(registeredEmail);
 		userLoginPage.sendKeyToPasswordTextBox(userPassword);
 		userLoginPage = userLoginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isMyAccountLinKDisplay());
-		homePage = homePage.clickLogoutLink(driver);
+		homePage = homePage.goToHomePage(driver);
 		
 		homePage.openPageUrl(driver, GlobleConstaints.ADMIN_PAGE_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
@@ -62,7 +62,7 @@ public class Switch_Roll extends BaseTest {
 	  public void Roll_02_Switch_Roll_User_Page_To_Admin_Page() {
 		adminDashboard.openPageUrl(driver, GlobleConstaints.PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getHomePage(driver);
-		homePage = homePage.clickToLoginLink();
+		homePage = homePage.clickToLogoutLink();
 		
 		
 		
@@ -70,7 +70,7 @@ public class Switch_Roll extends BaseTest {
 	}
 	@AfterClass
 	public void afterClass() {
-		 //driver.quit();
+		 driver.quit();
 	}
 	private WebDriver driver;
 	private String firstName, lastName, registeredEmail, userPassword,adminEmail,adminPassword;

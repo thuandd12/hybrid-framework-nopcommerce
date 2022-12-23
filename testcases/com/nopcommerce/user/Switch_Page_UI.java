@@ -41,9 +41,11 @@ public class Switch_Page_UI extends BaseTest {
   }
 
 	@Test
-	  public void Switch_Page() {
+	  public void Switch_Page_01() {
+		homePage = homePage.clickToLoginLink();
+		loginPage = PageGeneratorManager.getLoginPage(driver);
+		loginPage = loginPage.loginPageNop(registeredEmail, password);
 		homePage = homePage.clickMyAccountLink();
-		
 		customerInfoPage = PageGeneratorManager.getCustomerInfoPage(driver);
 		customerInfoPage.openAddressesPage(driver);
 		addressesPage = PageGeneratorManager.getAddressesPage(driver);

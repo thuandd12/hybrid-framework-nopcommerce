@@ -41,7 +41,7 @@ public class User_02_LogIn extends BaseTest {
   }
   @Test
   public void Login_01_Empty_Data() {
-	  homePage = homePage.clickLogoutLink(driver);
+	  homePage = homePage.goToHomePage(driver);
 	  homePage = homePage.clickToLoginLink();
 	  loginPage = PageGeneratorManager.getLoginPage(driver);
 	  loginPage = loginPage.clickToLoginButton();
