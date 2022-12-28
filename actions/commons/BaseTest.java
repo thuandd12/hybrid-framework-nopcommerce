@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 
+import exception.BrownserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -41,7 +42,7 @@ public class BaseTest {
 			options.addArguments("window-size=1920x1080");
 			driverBaseTest = new ChromeDriver(options);
 	    }else {
-			throw new RuntimeException("Browser name invalid.");
+			throw new BrownserNotSupport(browserName);
 		}
 		driverBaseTest.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driverBaseTest.get(GlobleConstaints.PORTAL_PAGE_URL);
