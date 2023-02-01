@@ -49,7 +49,7 @@ public class Dynamic_Locator extends BaseTest {
 		customerInfoPage = PageGeneratorManager.getCustomerInfoPage(driver);
 		addressesPage = (UserAddressesPageObject) customerInfoPage.openPagesAtMyAccountByName(driver, "Addresses");
 		rewardPointsPage = (UserRewardPointsPageObject) addressesPage.openPagesAtMyAccountByName(driver, "Reward points");
-		rewardPointsPage.openPagesAtMyAccountByName(driver, "Customer info");
+		rewardPointsPage.openPagesAtMyAccountByName(driver, "Customer infor");
 		
 		 
 	 }
