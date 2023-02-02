@@ -48,5 +48,15 @@ public class HomePageObject extends BasePage {
 		waitForElementVisible(driver, HomePageUIs.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 		return isElementDisplay(driver, HomePageUIs.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 	}
+	public void enterToTextboxByColumnNameAtRowNumber(String columnName, String rowIndex, String value) {
+		int columnIndex = getElementSize(driver, HomePageUIs.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementVisible(driver, HomePageUIs.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowIndex,String.valueOf(columnIndex));
+		sendkeyToElement(driver, HomePageUIs.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, value, rowIndex,String.valueOf(columnIndex));
+	}
+	public void selectDropdownByColumnAtRowNumber(String columnName, String rowIndex, String value) {
+		int columnIndex = getElementSize(driver, HomePageUIs.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUIs.DROPDOWN_BY_NAME, rowIndex,String.valueOf(columnIndex));
+		selectItemInDefaultDropdown(driver, HomePageUIs.DROPDOWN_BY_NAME, value, rowIndex,String.valueOf(columnIndex));
+	}
 
 }

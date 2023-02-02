@@ -21,8 +21,9 @@ public class DataTable_DataGrird extends BaseTest {
 	 homePage = PageGeneratorManager.getHomePage(driver);
 		
   }
-  @Test
+  //@Test
   public void Table_01_Paging() {
+	  //https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/
 	  homePage.openPagingByPageNumber("3");
 	  Assert.assertTrue(homePage.isPageNumberActived("3"));
 	  homePage.openPagingByPageNumber("10");
@@ -36,7 +37,7 @@ public class DataTable_DataGrird extends BaseTest {
 	 
 	  
   }
-  @Test
+  //@Test
   public void Table_02_Enter_To_Header() {
 	  homePage.refreshCurrentPage(driver);
 	  homePage.enterToHeaderTextboxByLabel("Females","12253515");
@@ -46,17 +47,25 @@ public class DataTable_DataGrird extends BaseTest {
 	
 	  
   }
-  @Test
+  //@Test
   public void Table_03_Get_Value_Row() {
 	  homePage.refreshCurrentPage(driver);
 	  allContryValues = homePage.getValueEachRowAtAllPage();
   }
   @Test
-  public void Register_04_Email_Already_Exists() {
+  public void Register_04_Enter_To_Textbox() {
+	  //https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/
+	  homePage.enterToTextboxByColumnNameAtRowNumber("Company","1","FPT");
+	  homePage.enterToTextboxByColumnNameAtRowNumber("Contact Person","1","Jackson");
+	  homePage.enterToTextboxByColumnNameAtRowNumber("Order Placed","2","10");
+	  homePage.enterToTextboxByColumnNameAtRowNumber("Company","2","Apple");
+	  homePage.selectDropdownByColumnAtRowNumber("Country","1","Malaysia");
+	  homePage.selectDropdownByColumnAtRowNumber("Country","2","United States");
+	  
   }
   @AfterClass
   public void afterClass() {
-		driver.quit();
+		//driver.quit();
   }
   private WebDriver driver;
   private HomePageObject homePage;

@@ -208,12 +208,25 @@ public class BasePage {
 			element.click();
 		}
 	}
+	public void checkToDefaultCheckBoxRadio(WebDriver driver,String locatorType,String... dynamicValues) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
 	public void unCheckToDefaultCheckBox(WebDriver driver,String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
 		if (element.isSelected()) {
 			element.click();
 		}
 	}
+	public void unCheckToDefaultCheckBox(WebDriver driver,String locatorType,String... dynamicValues) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+
 	public boolean isElementDisplay(WebDriver driver,String locatorType) {
 		return getWebElement(driver, locatorType).isDisplayed();
 	}
