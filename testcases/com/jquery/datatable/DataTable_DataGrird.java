@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import commons.BaseTest;
-import pageObjectjQuery.HomePageObject;
-import pageObjectjQuery.PageGeneratorManager;
+import pageObjectjQueryDataTable.PageGeneratorManager;
+
 
 public class DataTable_DataGrird extends BaseTest {
 	@Parameters({"browser","url"})
@@ -68,7 +68,7 @@ public class DataTable_DataGrird extends BaseTest {
 		//driver.quit();
   }
   private WebDriver driver;
-  private HomePageObject homePage;
+  private pageObjectjQueryDataTable.HomePageObject homePage;
   private List<String> allContryValues;
 
   

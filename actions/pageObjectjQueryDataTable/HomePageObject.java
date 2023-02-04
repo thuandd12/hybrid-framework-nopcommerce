@@ -1,4 +1,4 @@
-package pageObjectjQuery;
+package pageObjectjQueryDataTable;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import pageUIs.jQuery.HomePageUIs;
+import pageUIs.jQueryDataTable.HomePageUIs;
 
 public class HomePageObject extends BasePage {
 	WebDriver driver;
@@ -57,6 +57,32 @@ public class HomePageObject extends BasePage {
 		int columnIndex = getElementSize(driver, HomePageUIs.COLUMN_INDEX_BY_NAME, columnName) + 1;
 		waitForElementClickable(driver, HomePageUIs.DROPDOWN_BY_NAME, rowIndex,String.valueOf(columnIndex));
 		selectItemInDefaultDropdown(driver, HomePageUIs.DROPDOWN_BY_NAME, value, rowIndex,String.valueOf(columnIndex));
+	}
+	
+	
+	
+	public void clickAccountLinkAtPageUser() {
+		waitForElementClickable(driver, HomePageUIs.ACCOUNT_LINK_AT_PAGE_USER);
+		clickToElement(driver, HomePageUIs.ACCOUNT_LINK_AT_PAGE_USER);
+	}
+	public void clickRegisterLinkAtPageUser() {
+		waitForElementClickable(driver, HomePageUIs.REGISTER_LINK_AT_PAGE_USER);
+		clickToElement(driver, HomePageUIs.REGISTER_LINK_AT_PAGE_USER);
+		
+	}
+	public void sendKeyToTextboxRegisterAtPageUser(String textboxName, String value) {
+		waitForElementInVisible(driver, HomePageUIs.REGISTER_TEXTBOX_AT_PAGE_USER, textboxName);
+		sendkeyToElement(driver, HomePageUIs.REGISTER_TEXTBOX_AT_PAGE_USER, value, textboxName);
+		
+	}
+	public void clickToRegisterButtonAtPageUser() {
+		waitForElementClickable(driver, HomePageUIs.REGISTER_BUTTON_AT_PAGE_USER);
+		clickToElement(driver, HomePageUIs.REGISTER_BUTTON_AT_PAGE_USER);
+		
+	}
+	public boolean isWellcomeMessesgeDisplay() {
+		waitForElementInVisible(driver, HomePageUIs.WELLCOME_MESSENGE_AT_PAGE_USER);
+		return isElementDisplay(driver, HomePageUIs.WELLCOME_MESSENGE_AT_PAGE_USER);
 	}
 
 }

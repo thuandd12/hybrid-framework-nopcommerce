@@ -22,6 +22,7 @@ import pageObjectsNopcommerce.user.UserRegisterPageObject;
 import pageObjectsNopcommerce.admin.AdminLoginPageObject;
 import pageObjectsNopcommerce.user.PageGeneratorManager;
 import pageObjectsNopcommerce.user.UserRewardPointsPageObject;
+import pageUIs.jQueryUpLoadFile.HomePageUIs;
 import pageUIsNopcommerce.Admin.AdminDashboardPageUI;
 import pageUIsNopcommerce.User.BasePageUI;
 import pageUIsNopcommerce.User.UserHomePageUI;
@@ -394,6 +395,16 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.ADMIN_LOGOUT_LINK);
 		clickToElement(driver, BasePageUI.ADMIN_LOGOUT_LINK);
 		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+	public void upLoadMultibleFile(WebDriver diver,String...filenames) {
+		String filePath = GlobleConstaints.UPLOAD_FILE_FOLDER;
+		String fullFileName = "";
+		for (String file : filenames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim();
+		getWebElement(diver, HomePageUIs.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+		System.out.println(fullFileName);
 	}
 
 	

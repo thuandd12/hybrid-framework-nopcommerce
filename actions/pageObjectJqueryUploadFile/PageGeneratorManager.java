@@ -1,4 +1,4 @@
-package pageObjectjQuery;
+package pageObjectJqueryUploadFile;
 
 import org.openqa.selenium.WebDriver;
 
