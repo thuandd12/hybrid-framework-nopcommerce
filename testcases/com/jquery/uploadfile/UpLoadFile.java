@@ -27,22 +27,22 @@ public class UpLoadFile extends BaseTest{
 	public void Upload_01_One_File_Per_Time() {
 	
 		homePage.upLoadMultibleFile(driver, oto1File);
-		Assert.assertTrue(homePage.isFileNameLoaded(oto1File));
+		verifyTrue(homePage.isFileNameLoaded(oto1File));
 		homePage.clickToStartButton();
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto1File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto1File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto1File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto1File));
 		
 		homePage.upLoadMultibleFile(driver, oto2File);
-		Assert.assertTrue(homePage.isFileNameLoaded(oto2File));
+		verifyTrue(homePage.isFileNameLoaded(oto2File));
 		homePage.clickToStartButton();
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto2File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto2File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto2File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto2File));
 		
 		homePage.upLoadMultibleFile(driver, oto3File);
-		Assert.assertTrue(homePage.isFileNameLoaded(oto3File));
+		verifyTrue(homePage.isFileNameLoaded(oto3File));
 		homePage.clickToStartButton();
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto3File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto3File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto3File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto3File));
 		
 	}
 	@Test
@@ -51,19 +51,19 @@ public class UpLoadFile extends BaseTest{
 
 		homePage.upLoadMultibleFile(driver, oto1File,oto2File,oto3File);
 		
-		Assert.assertTrue(homePage.isFileNameLoaded(oto1File));
-		Assert.assertTrue(homePage.isFileNameLoaded(oto2File));
-		Assert.assertTrue(homePage.isFileNameLoaded(oto3File));
+		verifyTrue(homePage.isFileNameLoaded(oto1File));
+		verifyTrue(homePage.isFileNameLoaded(oto2File));
+		verifyTrue(homePage.isFileNameLoaded(oto3File));
 		
 		homePage.clickToStartButton();
 		
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto1File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto2File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByLink(oto3File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto1File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto2File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByLink(oto3File));
 		
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto1File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto2File));
-		Assert.assertTrue(homePage.isFileNameLoadedSuccessByImg(oto3File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto1File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto2File));
+		verifyTrue(homePage.isFileNameLoadedSuccessByImg(oto3File));
 		
 	}
 	@AfterClass
