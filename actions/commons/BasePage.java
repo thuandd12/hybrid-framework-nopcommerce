@@ -2,11 +2,13 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -227,10 +229,34 @@ public class BasePage {
 			element.click();
 		}
 	}
+	public void overrideGlobalTimeout(WebDriver driver,long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	}
 
 	public boolean isElementDisplay(WebDriver driver,String locatorType) {
-		return getWebElement(driver, locatorType).isDisplayed();
+		try {
+			return getWebElement(driver, locatorType).isDisplayed();
+			
+		} catch (NoSuchElementException e) {
+			return false;
+		} 
 	}
+	public boolean isElementUndisplayed(WebDriver driver,String locatorType) {
+		overrideGlobalTimeout(driver, shortTimeOut);
+		List<WebElement> elements = getListWebElement(driver, locatorType);
+		overrideGlobalTimeout(driver, longTimeOut);
+		if (elements.size()==0) {
+			System.out.println("Element not in DOM");
+			return true;
+		} else if (elements.size()>0 && !elements.get(0).isDisplayed()){
+			System.out.println("Element in DOM but not visible/displayed");
+			return true;
+		}else {
+			System.out.println("Element in DOM and visible");
+		return false;
+		}
+	}
+	
 	public boolean isElementDisplay(WebDriver driver,String locatorType,String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
 	}
@@ -324,6 +350,16 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
+	/*
+	 *wait for element undisplayed in DOM or not in DOM and override implicit timeout
+	 */
+	public void waitForElementUndisplayed(WebDriver driver,String locatorType) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeOut);
+		overrideGlobalTimeout(driver, shortTimeOut);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+		overrideGlobalTimeout(driver, longTimeOut);
+		
+	}
 	public void waitForAllElementVisible(WebDriver driver,String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(locatorType)));
@@ -357,6 +393,7 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 	private long longTimeOut = GlobleConstaints.LONG_TIMEOUT;
+	private long shortTimeOut = GlobleConstaints.SHORT_TIMEOUT;
 	
 	public UserCustomerInfoPageObject openCustomerInfoPage (WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.CUSTOMERINFO_PAGE);
