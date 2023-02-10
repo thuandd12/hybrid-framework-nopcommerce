@@ -32,16 +32,16 @@ public class User_03_Log_ReportNG extends BaseTest  {
 	  log.info("Register - Step 01: Navigate to 'Register' page");
 	  homePage = homePage.clickToRegisterLink();
 	  
-	  log.info("Register - Step 02: Enter to Firstname textbox with value is 'firstName'");
+	  log.info("Register - Step 02: Enter to Firstname textbox with value is '"+ firstName +"'");
 	  registerPage.inputToFirstNameTextbox(firstName);
 	  
-	  log.info("Register - Step 03: Enter to Lastname textbox with value is 'lastName'");
+	  log.info("Register - Step 03: Enter to Lastname textbox with value is '"+ lastName +"'");
 	  registerPage.inputToLastNameTextbox(lastName);
 	  
-	  log.info("Register - Step 04: Enter to Email textbox with value is 'emailAddress'");
+	  log.info("Register - Step 04: Enter to Email textbox with value is '"+ emailAddress +"'");
 	  registerPage.inputToEmailTextbox(emailAddress);
 	  
-	  log.info("Register - Step 05: Enter to Password textbox with value is 'password'");
+	  log.info("Register - Step 05: Enter to Password textbox with value is '"+ password +"'");
 	  registerPage.inputToPasswordTextbox(password);
 	  
 	  log.info("Register - Step 06: Enter to Confirm Password textbox with value is '"+ password +"'");
@@ -51,7 +51,7 @@ public class User_03_Log_ReportNG extends BaseTest  {
 	  registerPage.clickRegisterButton();
 	  
 	  log.info("Register - Step 08: Verify succes massage");
-	  Assert.assertEquals(registerPage.getRegisterSuccesMessage(), "Your registration completed");
+	  Assert.assertEquals(registerPage.getRegisterSuccesMessage(), "Your registration completed.");
   }
  
   @AfterClass

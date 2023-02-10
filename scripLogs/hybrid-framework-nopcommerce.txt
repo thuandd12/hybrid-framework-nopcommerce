@@ -1,8 +1,8 @@
-[2023-02-09 20:20:42,480] Register - Step 01: Navigate to 'Register' page
-[2023-02-09 20:20:44,286] Register - Step 02: Enter to Firstname textbox with value is 'firstName'
-[2023-02-09 20:20:44,468] Register - Step 03: Enter to Lastname textbox with value is 'lastName'
-[2023-02-09 20:20:44,656] Register - Step 04: Enter to Email textbox with value is 'emailAddress'
-[2023-02-09 20:20:44,862] Register - Step 05: Enter to Password textbox with value is 'password'
-[2023-02-09 20:20:45,027] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-09 20:20:45,201] Register - Step 07: Click to Register button
-[2023-02-09 20:20:46,240] Register - Step 08: Verify succes massage
+[2023-02-10 13:36:57,983] Register - Step 01: Navigate to 'Register' page
+[2023-02-10 13:36:59,030] Register - Step 02: Enter to Firstname textbox with value is 'duc'
+[2023-02-10 13:36:59,344] Register - Step 03: Enter to Lastname textbox with value is 'thuan'
+[2023-02-10 13:36:59,625] Register - Step 04: Enter to Email textbox with value is 'thuan8625@gmail.com'
+[2023-02-10 13:36:59,954] Register - Step 05: Enter to Password textbox with value is '123456'
+[2023-02-10 13:37:00,216] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2023-02-10 13:37:00,493] Register - Step 07: Click to Register button
+[2023-02-10 13:37:01,367] Register - Step 08: Verify succes massage

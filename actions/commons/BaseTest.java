@@ -23,6 +23,9 @@ public class BaseTest {
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
+	public WebDriver getDriverInstance() {
+		return this.driverBaseTest;
+	}
 
 	
 	protected WebDriver getBrowserDriver(String browserName) {

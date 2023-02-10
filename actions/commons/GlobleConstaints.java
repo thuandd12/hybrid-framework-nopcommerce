@@ -10,6 +10,7 @@ public class GlobleConstaints {
 	public static final String DOWNLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "downloadFile";
 	public static final String BROWNSER_LOG_FOLDER = PROJECT_PATH + File.separator + "brownserLog";
 	public static final String DRAG_DROP_HTML5_FOLDER = PROJECT_PATH + File.separator + "dragDropHTML5";
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGImage" + File.separator;
 	public static final long SHORT_TIMEOUT = 5;
 	public static final long LONG_TIMEOUT = 30;
 	public static final long RYTRY_TIMEOUT = 3;
