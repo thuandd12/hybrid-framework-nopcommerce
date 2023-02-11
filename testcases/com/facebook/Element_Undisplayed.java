@@ -32,9 +32,9 @@ public class Element_Undisplayed extends BaseTest {
 	  loginPage.clickCloseIcon();
 	  verifyTrue(loginPage.isFirstNameTextBoxUnDisplayed());
   }
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void afterClass() {
-		driver.quit();
+	  closeBrowserDriver();
   }
   private WebDriver driver;
   private LoginPageObject loginPage;

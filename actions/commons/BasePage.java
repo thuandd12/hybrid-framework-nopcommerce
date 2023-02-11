@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -20,6 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjectsNopcommerce.user.UserAddressesPageObject;
 import pageObjectsNopcommerce.user.UserCustomerInfoPageObject;
 import pageObjectsNopcommerce.user.UserHomePageObject;
+import pageObjectsNopcommerce.user.UserLoginPageObject;
 import pageObjectsNopcommerce.user.UserRegisterPageObject;
 import pageObjectsNopcommerce.admin.AdminLoginPageObject;
 import pageObjectsNopcommerce.user.PageGeneratorManager;
@@ -322,10 +324,12 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getWebElement(driver, locatorType));
 	}
+
 	public void removeAttributeInDOM(WebDriver driver,String locatorType, String attributeRemove) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locatorType));
 	}
+
 
 	public String getElementValidationMessage(WebDriver driver,String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -443,6 +447,14 @@ public class BasePage {
 		fullFileName = fullFileName.trim();
 		getWebElement(diver, HomePageUIs.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
 	}
-
+	public Set<Cookie> getAllCookies(WebDriver driver ) {
+		return driver.manage().getCookies();
+	}
+	public void  setCookies(WebDriver driver , Set<Cookie> cookies ) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInsecond(2);
+	}
 	
 }

@@ -2,15 +2,18 @@
 <suite name="NopCommerce">
 <listeners>
 <listener class-name="commons.MethodListener"></listener>
-<listener class-name="reportConfig.ReportNGListener"/>
-<listener class-name="org.uncommons.reportng.HTMLReporter"/>
-<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+
+<!-- <listener class-name="reportConfig.ReportNGListener" /> -->
+<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+
 </listeners>
 
   <test name="Run on Chrome">
   <parameter name ="browser" value ="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.User_03_Log_ReportNG"/>
+      <class name="com.nopcommerce.commons.Common_02_Register_And_Cookies"/>
+      <class name="com.nopcommerce.user.User_05_Share_Login_With_Common_Cookie"/>
     </classes>
   </test> 
   

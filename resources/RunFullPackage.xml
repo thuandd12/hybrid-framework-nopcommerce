@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tests">
+	name = "Admin Mode" thread-count="3">
+	<listeners>
+		<listener class-name="commons.MethodListener"></listener>
+	</listeners>
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<packages>
+			<package name=" ..." />
+			<package name="...." />
+		</packages>
+
+	</test>
+
+</suite> 

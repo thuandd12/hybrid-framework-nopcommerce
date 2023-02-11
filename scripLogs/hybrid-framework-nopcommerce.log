@@ -1,40 +1,4 @@
-[2023-02-09 20:20:42,480] Register - Step 01: Navigate to 'Register' page
-[2023-02-09 20:20:44,286] Register - Step 02: Enter to Firstname textbox with value is 'firstName'
-[2023-02-09 20:20:44,468] Register - Step 03: Enter to Lastname textbox with value is 'lastName'
-[2023-02-09 20:20:44,656] Register - Step 04: Enter to Email textbox with value is 'emailAddress'
-[2023-02-09 20:20:44,862] Register - Step 05: Enter to Password textbox with value is 'password'
-[2023-02-09 20:20:45,027] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-09 20:20:45,201] Register - Step 07: Click to Register button
-[2023-02-09 20:20:46,240] Register - Step 08: Verify succes massage
-[2023-02-09 20:31:36,313] Register - Step 01: Navigate to 'Register' page
-[2023-02-09 20:31:38,051] Register - Step 02: Enter to Firstname textbox with value is 'duc'
-[2023-02-09 20:31:38,342] Register - Step 03: Enter to Lastname textbox with value is 'thuan'
-[2023-02-09 20:31:38,582] Register - Step 04: Enter to Email textbox with value is 'thuan5023@gmail.com'
-[2023-02-09 20:31:38,892] Register - Step 05: Enter to Password textbox with value is '123456'
-[2023-02-09 20:31:39,156] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-09 20:31:39,397] Register - Step 07: Click to Register button
-[2023-02-09 20:31:41,674] Register - Step 08: Verify succes massage
-[2023-02-09 20:37:11,254] Register - Step 01: Navigate to 'Register' page
-[2023-02-09 20:37:12,528] Register - Step 02: Enter to Firstname textbox with value is 'duc'
-[2023-02-09 20:37:12,715] Register - Step 03: Enter to Lastname textbox with value is 'thuan'
-[2023-02-09 20:37:12,911] Register - Step 04: Enter to Email textbox with value is 'thuan7106@gmail.com'
-[2023-02-09 20:37:13,125] Register - Step 05: Enter to Password textbox with value is '123456'
-[2023-02-09 20:37:13,282] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-09 20:37:13,437] Register - Step 07: Click to Register button
-[2023-02-09 20:37:14,206] Register - Step 08: Verify succes massage
-[2023-02-10 13:22:27,185] Register - Step 01: Navigate to 'Register' page
-[2023-02-10 13:22:28,041] Register - Step 02: Enter to Firstname textbox with value is 'duc'
-[2023-02-10 13:22:28,301] Register - Step 03: Enter to Lastname textbox with value is 'thuan'
-[2023-02-10 13:22:28,541] Register - Step 04: Enter to Email textbox with value is 'thuan3011@gmail.com'
-[2023-02-10 13:22:28,810] Register - Step 05: Enter to Password textbox with value is '123456'
-[2023-02-10 13:22:29,154] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-10 13:22:29,423] Register - Step 07: Click to Register button
-[2023-02-10 13:22:30,923] Register - Step 08: Verify succes massage
-[2023-02-10 13:36:57,983] Register - Step 01: Navigate to 'Register' page
-[2023-02-10 13:36:59,030] Register - Step 02: Enter to Firstname textbox with value is 'duc'
-[2023-02-10 13:36:59,344] Register - Step 03: Enter to Lastname textbox with value is 'thuan'
-[2023-02-10 13:36:59,625] Register - Step 04: Enter to Email textbox with value is 'thuan8625@gmail.com'
-[2023-02-10 13:36:59,954] Register - Step 05: Enter to Password textbox with value is '123456'
-[2023-02-10 13:37:00,216] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
-[2023-02-10 13:37:00,493] Register - Step 07: Click to Register button
-[2023-02-10 13:37:01,367] Register - Step 08: Verify succes massage
+[2023-02-11 15:12:10,881] OS name = windows 10
+[2023-02-11 15:12:10,882] Cannot invoke "Object.toString()" because "this.driverBaseTest" is null
+[2023-02-11 15:13:07,614] OS name = windows 10
+[2023-02-11 15:13:07,618] Cannot invoke "Object.toString()" because "this.driverBaseTest" is null
