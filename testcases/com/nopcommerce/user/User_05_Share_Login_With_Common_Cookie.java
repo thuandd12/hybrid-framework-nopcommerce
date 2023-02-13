@@ -25,7 +25,7 @@ public class User_05_Share_Login_With_Common_Cookie extends BaseTest {
 		
   }
   @Test
-  public void Login_01_Empty_Data() {
+  public void Login() {
 	  homePage = homePage.goToHomePage(driver);
 	  homePage = homePage.clickToLoginLink();
 	  loginPage = PageGeneratorManager.getLoginPage(driver);

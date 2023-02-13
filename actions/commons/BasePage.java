@@ -456,5 +456,34 @@ public class BasePage {
 		}
 		sleepInsecond(2);
 	}
+	/** Sendkey To Textbox By ID
+	 * @param driver
+	 * @param idName
+	 * @param valueInput
+	 */
+	public void sendkeyToTextboxByID(WebDriver driver,String idName,String valueInput) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, idName);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, valueInput, idName);
+	}
+	/** Click To Button By Text
+	 * @param driver
+	 * @param buttonName
+	 */
+	public void clickToButtonByText(WebDriver driver, String buttonName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonName);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonName);
+	}
+	/** Click To Radio Button By Label With Text
+	 * @param driver
+	 * @param labelText
+	 */
+	public void clickToRadioButtonByLabel(WebDriver driver,String labelText) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_LABEL_TEXT, labelText);
+		checkToDefaultCheckBoxRadio(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_LABEL_TEXT, labelText);
+	}
+	public void clickToDropdownByName(WebDriver driver, String dropdownName, String value) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
+		selectItemInDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, value, dropdownName);
+	}
 	
 }

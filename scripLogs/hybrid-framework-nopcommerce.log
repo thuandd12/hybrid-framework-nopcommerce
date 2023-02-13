@@ -2,3 +2,24 @@
 [2023-02-11 15:12:10,882] Cannot invoke "Object.toString()" because "this.driverBaseTest" is null
 [2023-02-11 15:13:07,614] OS name = windows 10
 [2023-02-11 15:13:07,618] Cannot invoke "Object.toString()" because "this.driverBaseTest" is null
+[2023-02-11 23:35:38,210] Register - Step 01: Navigate to 'Register' page
+[2023-02-11 23:36:22,306] Register - Step 01: Navigate to 'Register' page
+[2023-02-11 23:36:38,710] OS name = windows 10
+[2023-02-11 23:36:38,711] Driver instance name = chromedriver: chrome on windows (08e1d27867d771e599b422ee7aaa18b5)
+[2023-02-11 23:36:38,720] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O7A9K07', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e1d27867d771e599b422ee7aaa18b5
+[2023-02-11 23:36:47,730] OS name = windows 10
+[2023-02-11 23:36:47,731] Driver instance name = chromedriver: chrome on windows (4ab72aea162972b8c7938672865f4f99)
+[2023-02-11 23:36:51,811] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:23214
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O7A9K07', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[2023-02-11 23:37:27,589] Register - Step 01: Navigate to 'Register' page
+[2023-02-11 23:38:27,881] OS name = windows 10
+[2023-02-11 23:38:27,889] Driver instance name = chromedriver: chrome on windows (dca60545af283e996829d8b627c6ad3b)

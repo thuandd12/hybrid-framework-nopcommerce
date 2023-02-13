@@ -1,0 +1,3 @@
+[2023-02-11 23:37:27,589] Register - Step 01: Navigate to 'Register' page
+[2023-02-11 23:38:27,881] OS name = windows 10
+[2023-02-11 23:38:27,889] Driver instance name = chromedriver: chrome on windows (dca60545af283e996829d8b627c6ad3b)
