@@ -1,4 +1,4 @@
-package pageObjectsWordpressAmin;
+package pageObjectsWordpress;
 
 import org.openqa.selenium.WebDriver;
 
@@ -18,9 +18,10 @@ public class AminLoginPO extends BasePage {
 		waitForElementVisible(driver, AminLoginPageUIs.PASSWORD_TEXTBOX);
 		sendkeyToElement(driver, AminLoginPageUIs.PASSWORD_TEXTBOX, inputValue);
 	}
-	public void clickToLoginButton() {
+	public AdminHomePO clickToLoginButton() {
 		waitForElementClickable(driver, AminLoginPageUIs.LOGIN_BUTTON);
 		clickToElement(driver, AminLoginPageUIs.LOGIN_BUTTON);
+		return  PageGeneratorManager.getAdminHomePO(driver);
 	}
 
 }

@@ -1,4 +1,4 @@
-package pageObjectsWordpressAmin;
+package pageObjectsWordpress;
 
 import org.openqa.selenium.WebDriver;
 
@@ -14,6 +14,12 @@ public class PageGeneratorManager {
 	}
 	public static AdminAddNewPostPO getAdminAddNewPostPO(WebDriver driver) {
 		return new AdminAddNewPostPO(driver);
+	}
+	public static UserHomePO getUserHomePO(WebDriver driver) {
+		return new UserHomePO(driver);
+	}
+	public static UserUncategorizedPO getUserUncategorizedPO(WebDriver driver) {
+		return new UserUncategorizedPO(driver);
 	}
 
 }

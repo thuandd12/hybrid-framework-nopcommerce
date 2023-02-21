@@ -26,6 +26,7 @@ import pageObjectsNopcommerce.user.UserRegisterPageObject;
 import pageObjectsNopcommerce.admin.AdminLoginPageObject;
 import pageObjectsNopcommerce.user.PageGeneratorManager;
 import pageObjectsNopcommerce.user.UserRewardPointsPageObject;
+import pageObjectsWordpress.UserHomePO;
 import pageUIs.jQueryUpLoadFile.HomePageUIs;
 import pageUIsNopcommerce.Admin.AdminDashboardPageUI;
 import pageUIsNopcommerce.User.BasePageUI;
@@ -485,5 +486,8 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
 		selectItemInDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, value, dropdownName);
 	}
-	
+	public UserHomePO openUserPage(WebDriver driver,String UserURL) {
+		openPageUrl(driver, UserURL);
+		return pageObjectsWordpress.PageGeneratorManager.getUserHomePO(driver);
+	}
 }

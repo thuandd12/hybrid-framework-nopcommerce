@@ -1,4 +1,4 @@
-package pageObjectsWordpressAmin;
+package pageObjectsWordpress;
 
 import org.openqa.selenium.WebDriver;
 
@@ -14,12 +14,10 @@ public class AdminHomePO extends BasePage {
 		waitForElementVisible(driver, AdminHomePageUIs.MESSAGE_LOGIN_SUCCESSFULL);
 		return getElementText(driver, AdminHomePageUIs.MESSAGE_LOGIN_SUCCESSFULL);
 	}
-	public void clickToPostsLink() {
+	public AdminPostsSearchPO clickToPostsLink() {
 		waitForElementClickable(driver, AdminHomePageUIs.POSTS_LINK);
 		clickToElement(driver, AdminHomePageUIs.POSTS_LINK);
+		return PageGeneratorManager.getAdminPostsSearchPO(driver);
 	}
-	public String getsearchPostURL() {
-		return getCurrentUrl(driver);
-	}
-
+	
 }

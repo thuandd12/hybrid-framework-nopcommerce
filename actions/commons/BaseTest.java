@@ -5,6 +5,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,47 +21,47 @@ import exception.BrownserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	private WebDriver driverBaseTest;
+	private WebDriver driver;
 	protected final Log log;
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
 	public WebDriver getDriverInstance() {
-		return this.driverBaseTest;
+		return this.driver;
 	}
 
 	
 	protected WebDriver getBrowserDriver(String browserName) {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driverBaseTest = new ChromeDriver();
+			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();;
-			driverBaseTest = new FirefoxDriver();
+			driver = new FirefoxDriver();
 		}else if (browserName.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
-			driverBaseTest = new EdgeDriver();
+			driver = new EdgeDriver();
 		}else if (browserName.equals("opera")) {
 			WebDriverManager.operadriver().setup();
-			driverBaseTest = new OperaDriver();
+			driver = new OperaDriver();
 		}else if (browserName.equals("h_firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();	
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driverBaseTest = new FirefoxDriver(options);
+			driver = new FirefoxDriver(options);
 		}else if (browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();	
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driverBaseTest = new ChromeDriver(options);
+			driver = new ChromeDriver(options);
 	    }else {
 			throw new BrownserNotSupport(browserName);
 		}
-		driverBaseTest.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driverBaseTest.get(GlobleConstaints.PORTAL_PAGE_URL);
-		return driverBaseTest;
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(GlobleConstaints.PORTAL_PAGE_URL);
+		return driver;
 	}
 	protected int generateFakeNumber() {
 		  Random rand = new Random();
@@ -68,34 +70,34 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName, String appURl ) {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driverBaseTest = new ChromeDriver();
+			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();;
-			driverBaseTest = new FirefoxDriver();
+			driver = new FirefoxDriver();
 		}else if (browserName.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
-			driverBaseTest = new EdgeDriver();
+			driver = new EdgeDriver();
 		}else if (browserName.equals("opera")) {
 			WebDriverManager.operadriver().setup();
-			driverBaseTest = new OperaDriver();
+			driver = new OperaDriver();
 		}else if (browserName.equals("h_firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();	
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driverBaseTest = new FirefoxDriver(options);
+			driver = new FirefoxDriver(options);
 		}else if (browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();	
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
-			driverBaseTest = new ChromeDriver(options);
+			driver = new ChromeDriver(options);
 	    }else {
 			throw new BrownserNotSupport(browserName);
 		}
-		driverBaseTest.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driverBaseTest.get(appURl);
-		return driverBaseTest;
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(appURl);
+		return driver;
 	}
 
 	protected boolean verifyTrue(boolean condition) {
@@ -146,7 +148,7 @@ public class BaseTest {
 			String osName = System.getProperty("os.name").toLowerCase();
 			log.info("OS name = " + osName);
 
-			String driverInstanceName = driverBaseTest.toString().toLowerCase();
+			String driverInstanceName = driver.toString().toLowerCase();
 			log.info("Driver instance name = " + driverInstanceName);
 
 			String browserDriverName = null;
@@ -171,9 +173,9 @@ public class BaseTest {
 				cmd = "pkill " + browserDriverName;
 			}
 
-			if (driverBaseTest != null) {
-				driverBaseTest.manage().deleteAllCookies();
-				driverBaseTest.quit();
+			if (driver != null) {
+				driver.manage().deleteAllCookies();
+				driver.quit();
 			}
 		} catch (Exception e) {
 			log.info(e.getMessage());
@@ -187,6 +189,35 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	protected String getCurrentDate() {
+		DateTime nowUTC = new DateTime();
+		int day = nowUTC.getDayOfMonth();
+		if (day < 10) {
+			String dayValue = "0" + day;
+			return dayValue;
+		}
+		return String.valueOf(day);
+	}
+
+	protected String getCurrentMonth() {
+		DateTime now = new DateTime();
+		int month = now.getMonthOfYear();
+		if (month < 10) {
+			String monthValue = "0" + month;
+			return monthValue;
+		}
+		return String.valueOf(month);
+	}
+
+	protected String getCurrentYear() {
+		DateTime now = new DateTime();
+		return String.valueOf(now.getYear());
+	}
+
+	protected String getCurrentDay() {
+		return getCurrentYear() + "/" + getCurrentMonth() + "/" + getCurrentDate();
 	}
 
 }

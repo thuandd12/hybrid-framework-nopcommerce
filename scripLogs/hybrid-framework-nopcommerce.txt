@@ -1,3 +1,39 @@
-[2023-02-11 23:37:27,589] Register - Step 01: Navigate to 'Register' page
-[2023-02-11 23:38:27,881] OS name = windows 10
-[2023-02-11 23:38:27,889] Driver instance name = chromedriver: chrome on windows (dca60545af283e996829d8b627c6ad3b)
+[2023-02-21 23:21:20,829] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-21 23:21:27,786] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-21 23:21:28,166] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-21 23:21:28,360] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-21 23:21:32,021] Pre-Condition - Step 05: verify message login successfull
+[2023-02-21 23:21:32,133]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:32,151] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-21 23:21:34,178] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-21 23:21:38,587] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium8823'
+[2023-02-21 23:21:40,296] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown6067'
+[2023-02-21 23:21:42,193] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-21 23:21:43,448] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-21 23:21:44,519] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-21 23:21:47,507]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:47,524] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-21 23:21:50,845] Search_Post_And_View_Post - Step 02: verify 'Selenium8823' in 'Posts Search' page is deplayed
+[2023-02-21 23:21:50,960]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:50,960] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-21 23:21:51,158]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:51,158] Search_Post_And_View_Post - Step 04: verify '2023/02/21' in 'Posts Search' page is deplayed
+[2023-02-21 23:21:51,234]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:51,235] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium8823'
+[2023-02-21 23:21:51,507] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-21 23:21:51,621] Search_Post_And_View_Post - Step 07: verify 'Selenium8823' in 'Posts Search' page is deplayed
+[2023-02-21 23:21:51,685]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:51,685] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-21 23:21:51,735]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:51,735] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-21 23:21:53,543] Search_Post_And_View_Post - Step 10: verify 'Selenium8823' in 'User Home' page is deplayed 
+[2023-02-21 23:21:53,686]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:53,686] Search_Post_And_View_Post - Step 11: click to 'Selenium8823' in 'Recent Posts' 
+[2023-02-21 23:21:55,527] Search_Post_And_View_Post - Step 12: verify 'Selenium8823' in 'Uncategorized' page is deplayed 
+[2023-02-21 23:21:55,586]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:55,587] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-21 23:21:55,644]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:55,644] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown6067' in 'Uncategorized' page is deplayed 
+[2023-02-21 23:21:55,700]  -------------------------- PASSED -------------------------- 
+[2023-02-21 23:21:55,712] OS name = windows 10
+[2023-02-21 23:21:55,713] Driver instance name = chromedriver: chrome on windows (14ba1ab707c908a3c7b34916ca349fb8)

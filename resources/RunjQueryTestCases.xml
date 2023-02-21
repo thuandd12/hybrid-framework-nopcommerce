@@ -3,12 +3,12 @@
 <listeners>
 <listener class-name="commons.MethodListener"></listener>
 </listeners>
-<parameter name ="url" value ="https://blueimp.github.io/jQuery-File-Upload/"/>
+<parameter name ="url" value ="http://localhost/wp-admin/"/>
 
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome" />
     <classes>
-      <class name="com.jquery.uploadfile.UpLoadFile"/>
+      <class name="wordpress.adim.Post_01_Create_Read_Update_Delete_Search"/>
     </classes>
   </test> 
   

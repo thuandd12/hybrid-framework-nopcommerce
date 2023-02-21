@@ -3,16 +3,20 @@
 	<listeners>
 		<listener class-name="commons.MethodListener"></listener>
 	</listeners>
-	<parameter name ="appUrl" value ="http://localhost/wp-admin/"/>
-<parameter name ="appUrl" value ="http://localhost/"/>
+	<parameter name="urlAdmin" value="http://localhost/wp-admin/" />
+	<parameter name="urlUser" value="http://localhost/" />
 
 	<test name="Run on Chrome">
-		<parameter name="browser" value="chrome" />
-		<packages>
-			<package name="wordpress.adim" />
-			
-		</packages>
+	<parameter name="browser" value="chrome" />
+	
+	<classes>
+      <class name="wordpress.adim.Post_01_Create_Read_Update_Delete_Search"/>
+    </classes>
+	
+	<!-- <packages>
+		<package name="wordpress.adim" />
+	</packages> -->
 
-	</test>
+</test>
 
 </suite> 
