@@ -26,6 +26,7 @@ import pageObjectsNopcommerce.user.UserRegisterPageObject;
 import pageObjectsNopcommerce.admin.AdminLoginPageObject;
 import pageObjectsNopcommerce.user.PageGeneratorManager;
 import pageObjectsNopcommerce.user.UserRewardPointsPageObject;
+import pageObjectsWordpress.AdminHomePO;
 import pageObjectsWordpress.UserHomePO;
 import pageUIs.jQueryUpLoadFile.HomePageUIs;
 import pageUIsNopcommerce.Admin.AdminDashboardPageUI;
@@ -144,6 +145,12 @@ public class BasePage {
 		element.clear();
 		element.sendKeys(textValue);
 	}
+	public void clearValueInElementByDeleteKey(WebDriver driver,String locatorType) {
+		WebElement element = getWebElement(driver, locatorType);
+		element.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+	}
+	
+	
 	public void sendkeyToElement(WebDriver driver,String locatorType,String textValue,String... dynamicValues) {
 		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValues));
 		element.clear();
@@ -489,5 +496,9 @@ public class BasePage {
 	public UserHomePO openUserPage(WebDriver driver,String UserURL) {
 		openPageUrl(driver, UserURL);
 		return pageObjectsWordpress.PageGeneratorManager.getUserHomePO(driver);
+	}
+	public AdminHomePO openAdminPage(WebDriver driver,String UserURL) {
+		openPageUrl(driver, UserURL);
+		return pageObjectsWordpress.PageGeneratorManager.getAdminHomePO(driver);
 	}
 }

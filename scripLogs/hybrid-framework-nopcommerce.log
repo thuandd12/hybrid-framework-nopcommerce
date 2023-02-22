@@ -190,3 +190,799 @@ Driver info: driver.version: RemoteWebDriver
 [2023-02-21 23:21:55,700]  -------------------------- PASSED -------------------------- 
 [2023-02-21 23:21:55,712] OS name = windows 10
 [2023-02-21 23:21:55,713] Driver instance name = chromedriver: chrome on windows (14ba1ab707c908a3c7b34916ca349fb8)
+[2023-02-22 14:12:38,246] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 14:12:55,421] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 14:12:56,241] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 14:12:56,823] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 14:13:13,939] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 14:13:14,290]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:13:14,336] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 14:13:22,411] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 14:13:49,292] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium2839'
+[2023-02-22 14:13:53,023] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown6356'
+[2023-02-22 14:13:57,226] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 14:13:58,601] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 14:14:00,134] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 14:14:08,405]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:14:08,426] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 14:14:13,004] Search_Post_And_View_Post - Step 02: verify 'Selenium2839' in 'Posts Search' page is deplayed
+[2023-02-22 14:14:13,205]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:14:13,206] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 14:14:13,341]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:14:13,341] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 14:14:43,533] OS name = windows 10
+[2023-02-22 14:14:43,535] Driver instance name = chromedriver: chrome on windows (cea4c10a21e055a38b2213b2bb7cd796)
+[2023-02-22 14:15:13,822] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 14:15:27,221] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 14:15:27,844] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 14:15:28,248] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 14:15:37,634] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 14:15:37,846]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:15:37,895] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 14:15:46,014] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 14:15:58,071] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium889'
+[2023-02-22 14:16:02,777] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown5457'
+[2023-02-22 14:16:07,522] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 14:16:09,011] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 14:16:10,526] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 14:16:18,269]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:16:18,286] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 14:16:22,253] Search_Post_And_View_Post - Step 02: verify 'Selenium889' in 'Posts Search' page is deplayed
+[2023-02-22 14:16:22,491]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:16:22,494] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 14:16:22,637]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:16:22,637] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 14:16:52,781] OS name = windows 10
+[2023-02-22 14:16:52,784] Driver instance name = chromedriver: chrome on windows (6e81c2ad2df6ac14e923811c6bcf3783)
+[2023-02-22 14:20:14,639] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 14:20:29,618] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 14:20:30,253] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 14:20:30,600] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 14:20:44,722] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 14:20:45,149]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:20:45,204] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 14:20:52,159] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 14:21:17,212] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium9894'
+[2023-02-22 14:21:22,367] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown873'
+[2023-02-22 14:21:25,934] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 14:21:27,637] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 14:21:28,665] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 14:21:37,327]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:37,381] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 14:21:42,835] Search_Post_And_View_Post - Step 02: verify 'Selenium9894' in 'Posts Search' page is deplayed
+[2023-02-22 14:21:43,031]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:43,032] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 14:21:43,234]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:43,234] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 14:21:43,439]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:43,441] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium9894'
+[2023-02-22 14:21:44,130] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 14:21:44,354] Search_Post_And_View_Post - Step 07: verify 'Selenium9894' in 'Posts Search' page is deplayed
+[2023-02-22 14:21:44,543]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:44,543] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 14:21:44,745]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:44,745] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 14:21:49,229] Search_Post_And_View_Post - Step 10: verify 'Selenium9894' in 'User Home' page is deplayed 
+[2023-02-22 14:21:49,395]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:49,396] Search_Post_And_View_Post - Step 11: click to 'Selenium9894' in 'Recent Posts' 
+[2023-02-22 14:21:53,606] Search_Post_And_View_Post - Step 12: verify 'Selenium9894' in 'Uncategorized' page is deplayed 
+[2023-02-22 14:21:53,713]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:53,713] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 14:21:53,825]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:53,825] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown873' in 'Uncategorized' page is deplayed 
+[2023-02-22 14:21:53,921]  -------------------------- PASSED -------------------------- 
+[2023-02-22 14:21:53,937] OS name = windows 10
+[2023-02-22 14:21:53,938] Driver instance name = chromedriver: chrome on windows (db3e938b65d78ff71fda42c6411efd8d)
+[2023-02-22 15:17:58,426] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:18:06,524] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:18:06,933] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:18:07,152] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:18:11,518] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:18:11,647]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:11,669] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:18:13,770] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:18:18,133] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 5008'
+[2023-02-22 15:18:20,759] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 5227'
+[2023-02-22 15:18:23,497] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:18:24,091] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:18:24,986] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:18:28,993]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:29,001] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:18:31,093] Search_Post_And_View_Post - Step 02: verify 'Selenium 5008' in 'Posts Search' page is deplayed
+[2023-02-22 15:18:31,194]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:31,195] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:18:31,279]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:31,280] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:18:31,384]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:31,384] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 5008'
+[2023-02-22 15:18:31,800] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:18:31,930] Search_Post_And_View_Post - Step 07: verify 'Selenium 5008' in 'Posts Search' page is deplayed
+[2023-02-22 15:18:31,995]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:31,995] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:18:32,060]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:32,061] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:18:35,627] Search_Post_And_View_Post - Step 10: verify 'Selenium 5008' in 'User Home' page is deplayed 
+[2023-02-22 15:18:35,736]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:35,736] Search_Post_And_View_Post - Step 11: click to 'Selenium 5008' in 'Recent Posts' 
+[2023-02-22 15:18:38,072] Search_Post_And_View_Post - Step 12: verify 'Selenium 5008' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:18:38,135]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:38,135] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:18:38,192]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:38,192] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 5227' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:18:38,248]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:18:38,253] Edit_Post - Step 01: open admin page
+[2023-02-22 15:18:40,185] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:18:42,085] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 5008'
+[2023-02-22 15:18:42,400] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:18:42,533] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:18:46,736] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 973'
+[2023-02-22 15:18:49,345] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases7430'
+[2023-02-22 15:18:50,668] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:19:21,088] OS name = windows 10
+[2023-02-22 15:19:21,089] Driver instance name = chromedriver: chrome on windows (7db6d14c40f5a4f02cd5ea6a6455d6a6)
+[2023-02-22 15:23:37,602] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:23:44,317] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:23:44,687] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:23:44,891] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:23:48,679] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:23:48,794]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:23:48,814] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:23:50,908] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:23:55,322] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 9817'
+[2023-02-22 15:23:57,739] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 8362'
+[2023-02-22 15:24:01,105] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:24:01,848] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:24:02,566] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:24:05,697]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:05,708] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:24:08,614] Search_Post_And_View_Post - Step 02: verify 'Selenium 9817' in 'Posts Search' page is deplayed
+[2023-02-22 15:24:08,717]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:08,717] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:24:08,799]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:08,799] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:24:08,886]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:08,887] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 9817'
+[2023-02-22 15:24:09,259] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:24:09,378] Search_Post_And_View_Post - Step 07: verify 'Selenium 9817' in 'Posts Search' page is deplayed
+[2023-02-22 15:24:09,444]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:09,445] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:24:09,505]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:09,506] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:24:11,479] Search_Post_And_View_Post - Step 10: verify 'Selenium 9817' in 'User Home' page is deplayed 
+[2023-02-22 15:24:11,567]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:11,567] Search_Post_And_View_Post - Step 11: click to 'Selenium 9817' in 'Recent Posts' 
+[2023-02-22 15:24:13,314] Search_Post_And_View_Post - Step 12: verify 'Selenium 9817' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:24:13,386]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:13,386] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:24:13,448]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:13,448] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 8362' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:24:13,546]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:24:13,552] Edit_Post - Step 01: open admin page
+[2023-02-22 15:24:15,460] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:24:17,468] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 9817'
+[2023-02-22 15:24:17,733] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:24:17,854] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:24:21,549] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 8570'
+[2023-02-22 15:24:23,860] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases3964'
+[2023-02-22 15:24:25,179] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:24:25,788] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 15:24:55,893] OS name = windows 10
+[2023-02-22 15:24:55,894] Driver instance name = chromedriver: chrome on windows (115d58455523350a11d5aceaa5998929)
+[2023-02-22 15:28:40,134] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:28:48,284] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:28:48,686] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:28:48,890] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:28:52,993] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:28:53,098]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:28:53,120] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:28:55,217] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:28:59,615] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 5405'
+[2023-02-22 15:29:01,949] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 3786'
+[2023-02-22 15:29:05,139] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:29:06,147] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:29:06,829] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:29:36,927] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:29:39,608] Search_Post_And_View_Post - Step 02: verify 'Selenium 5405' in 'Posts Search' page is deplayed
+[2023-02-22 15:29:39,705]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:39,705] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:29:39,782]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:39,782] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:29:39,852]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:39,852] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 5405'
+[2023-02-22 15:29:40,103] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:29:40,225] Search_Post_And_View_Post - Step 07: verify 'Selenium 5405' in 'Posts Search' page is deplayed
+[2023-02-22 15:29:40,307]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:40,307] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:29:40,369]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:40,369] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:29:42,643] Search_Post_And_View_Post - Step 10: verify 'Selenium 5405' in 'User Home' page is deplayed 
+[2023-02-22 15:29:42,813]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:42,813] Search_Post_And_View_Post - Step 11: click to 'Selenium 5405' in 'Recent Posts' 
+[2023-02-22 15:29:44,890] Search_Post_And_View_Post - Step 12: verify 'Selenium 5405' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:29:44,952]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:44,952] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:29:45,014]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:45,015] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 3786' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:29:45,073]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:45,077] Edit_Post - Step 01: open admin page
+[2023-02-22 15:29:46,904] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:29:49,111] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 5405'
+[2023-02-22 15:29:49,371] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:29:49,493] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:29:53,741] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 6323'
+[2023-02-22 15:29:56,069] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases7582'
+[2023-02-22 15:29:57,476] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:29:58,094] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 15:29:59,824]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:29:59,825] Edit_Post - Step 10: open 'Search Post' page
+[2023-02-22 15:30:02,173] Edit_Post - Step 11: verify 'Automation Test 6323' in 'Posts Search' page is deplayed
+[2023-02-22 15:30:02,287]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:02,287] Edit_Post - Step 12: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:30:02,374]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:02,374] Edit_Post - Step 13: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:30:02,504]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:02,504] Edit_Post - Step 14: sendkey to 'Search Post' textbox with value is 'Automation Test 6323'
+[2023-02-22 15:30:02,815] Edit_Post - Step 15: click to 'Search Post' button
+[2023-02-22 15:30:02,942] Edit_Post - Step 16: verify 'Automation Test 6323' in 'Posts Search' page is deplayed
+[2023-02-22 15:30:03,009]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:03,009] Edit_Post - Step 17: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:30:03,076]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:03,076] Edit_Post - Step 18: open 'User' page
+[2023-02-22 15:30:04,691] Edit_Post - Step 19: verify 'Automation Test 6323' in 'User Home' page is deplayed 
+[2023-02-22 15:30:04,760]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:04,760] Edit_Post - Step 20: click to 'Automation Test 6323' in 'Recent Posts' 
+[2023-02-22 15:30:06,292] Edit_Post - Step 21: verify 'Automation Test 6323' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:30:06,391]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:06,392] Edit_Post - Step 22: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:30:06,450]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:30:06,450] Edit_Post - Step 23: verify 'Test Cases7582' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:30:36,551] OS name = windows 10
+[2023-02-22 15:30:36,551] Driver instance name = chromedriver: chrome on windows (6a70439d9f212bed6c4ce18a146e034d)
+[2023-02-22 15:34:31,979] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:34:38,914] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:34:39,309] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:34:39,535] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:34:44,563] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:34:44,706]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:34:44,726] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:34:46,912] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:34:51,474] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 1693'
+[2023-02-22 15:34:53,934] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 5928'
+[2023-02-22 15:34:57,071] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:34:57,805] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:34:58,437] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:35:28,621] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:35:31,062] Search_Post_And_View_Post - Step 02: verify 'Selenium 1693' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:31,203]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:31,203] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:31,306]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:31,306] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:31,385]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:31,385] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 1693'
+[2023-02-22 15:35:31,629] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:35:31,738] Search_Post_And_View_Post - Step 07: verify 'Selenium 1693' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:31,789]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:31,789] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:31,842]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:31,842] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:35:33,991] Search_Post_And_View_Post - Step 10: verify 'Selenium 1693' in 'User Home' page is deplayed 
+[2023-02-22 15:35:34,073]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:34,073] Search_Post_And_View_Post - Step 11: click to 'Selenium 1693' in 'Recent Posts' 
+[2023-02-22 15:35:35,979] Search_Post_And_View_Post - Step 12: verify 'Selenium 1693' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:35:36,044]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:36,045] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:35:36,105]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:36,106] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 5928' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:35:36,162]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:36,166] Edit_Post - Step 01: open admin page
+[2023-02-22 15:35:38,043] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:35:40,043] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 1693'
+[2023-02-22 15:35:40,370] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:35:40,531] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:35:45,101] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 8465'
+[2023-02-22 15:35:47,544] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases1541'
+[2023-02-22 15:35:48,876] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:35:49,653] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 15:35:51,485]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:51,485] Edit_Post - Step 10: open 'Search Post' page
+[2023-02-22 15:35:54,107] Edit_Post - Step 11: verify 'Automation Test 8465' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:54,233]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:54,233] Edit_Post - Step 12: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:54,339]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:54,339] Edit_Post - Step 13: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:54,421]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:54,421] Edit_Post - Step 14: sendkey to 'Search Post' textbox with value is 'Automation Test 8465'
+[2023-02-22 15:35:54,716] Edit_Post - Step 15: click to 'Search Post' button
+[2023-02-22 15:35:54,857] Edit_Post - Step 16: verify 'Automation Test 8465' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:55,026]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:55,026] Edit_Post - Step 17: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:35:55,103]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:55,103] Edit_Post - Step 18: open 'User' page
+[2023-02-22 15:35:56,699] Edit_Post - Step 19: verify 'Automation Test 8465' in 'User Home' page is deplayed 
+[2023-02-22 15:35:56,774]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:56,774] Edit_Post - Step 20: click to 'Automation Test 8465' in 'Recent Posts' 
+[2023-02-22 15:35:58,328] Edit_Post - Step 21: verify 'Automation Test 8465' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:35:58,399]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:58,399] Edit_Post - Step 22: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:35:58,464]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:35:58,465] Edit_Post - Step 23: verify 'Test Cases1541' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:36:28,504] OS name = windows 10
+[2023-02-22 15:36:28,505] Driver instance name = chromedriver: chrome on windows (8221dee34c10145ea8923127bfe18716)
+[2023-02-22 15:41:32,462] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:41:38,602] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:41:38,973] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:41:39,170] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:41:43,978] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:41:44,111]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:41:44,128] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:41:46,325] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:41:50,713] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 2702'
+[2023-02-22 15:41:52,585] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 4750'
+[2023-02-22 15:41:56,397] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:41:57,719] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:41:58,451] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:42:28,620] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:42:30,480] Search_Post_And_View_Post - Step 02: verify 'Selenium 2702' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:30,572]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:30,572] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:30,642]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:30,643] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:30,715]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:30,715] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 2702'
+[2023-02-22 15:42:30,982] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:42:31,127] Search_Post_And_View_Post - Step 07: verify 'Selenium 2702' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:31,195]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:31,195] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:31,256]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:31,256] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:42:33,154] Search_Post_And_View_Post - Step 10: verify 'Selenium 2702' in 'User Home' page is deplayed 
+[2023-02-22 15:42:33,281]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:33,281] Search_Post_And_View_Post - Step 11: click to 'Selenium 2702' in 'Recent Posts' 
+[2023-02-22 15:42:35,209] Search_Post_And_View_Post - Step 12: verify 'Selenium 2702' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:42:35,278]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:35,278] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:42:35,337]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:35,337] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 4750' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:42:35,395]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:35,398] Edit_Post - Step 01: open admin page
+[2023-02-22 15:42:37,281] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:42:39,078] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 2702'
+[2023-02-22 15:42:39,366] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:42:39,483] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:42:45,378] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 1295'
+[2023-02-22 15:42:47,828] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases5670'
+[2023-02-22 15:42:49,207] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:42:49,958] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 15:42:51,810]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:51,810] Edit_Post - Step 10: open 'Search Post' page
+[2023-02-22 15:42:53,774] Edit_Post - Step 11: verify 'Automation Test 1295' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:53,879]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:53,879] Edit_Post - Step 12: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:53,963]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:53,963] Edit_Post - Step 13: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:54,063]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:54,063] Edit_Post - Step 14: sendkey to 'Search Post' textbox with value is 'Automation Test 1295'
+[2023-02-22 15:42:54,349] Edit_Post - Step 15: click to 'Search Post' button
+[2023-02-22 15:42:54,486] Edit_Post - Step 16: verify 'Automation Test 1295' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:54,589]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:54,589] Edit_Post - Step 17: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:42:54,709]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:54,709] Edit_Post - Step 18: open 'User' page
+[2023-02-22 15:42:56,356] Edit_Post - Step 19: verify 'Automation Test 1295' in 'User Home' page is deplayed 
+[2023-02-22 15:42:56,421]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:56,421] Edit_Post - Step 20: click to 'Automation Test 1295' in 'Recent Posts' 
+[2023-02-22 15:42:57,920] Edit_Post - Step 21: verify 'Automation Test 1295' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:42:57,984]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:57,984] Edit_Post - Step 22: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:42:58,043]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:42:58,043] Edit_Post - Step 23: verify 'Test Cases5670' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:43:28,094] OS name = windows 10
+[2023-02-22 15:43:28,095] Driver instance name = chromedriver: chrome on windows (3968baf6fe6223d91ffee2e26b2bd47b)
+[2023-02-22 15:43:28,101] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O7A9K07', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59304}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3968baf6fe6223d91ffee2e26b2bd47b
+[2023-02-22 15:56:24,506] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 15:56:38,505] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 15:56:39,469] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 15:56:39,943] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 15:56:54,471] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 15:56:54,990]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:56:55,033] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 15:57:06,176] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 15:57:19,968] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 2419'
+[2023-02-22 15:57:25,273] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 6746'
+[2023-02-22 15:57:29,237] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 15:57:30,819] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 15:57:32,686] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 15:57:43,954]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:43,978] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 15:57:49,617] Search_Post_And_View_Post - Step 02: verify 'Selenium 2419' in 'Posts Search' page is deplayed
+[2023-02-22 15:57:50,080]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:50,081] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:57:50,289]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:50,289] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 15:57:50,442]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:50,442] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 2419'
+[2023-02-22 15:57:51,120] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 15:57:51,315] Search_Post_And_View_Post - Step 07: verify 'Selenium 2419' in 'Posts Search' page is deplayed
+[2023-02-22 15:57:51,434]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:51,434] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 15:57:51,517]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:51,517] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 15:57:55,559] Search_Post_And_View_Post - Step 10: verify 'Selenium 2419' in 'User Home' page is deplayed 
+[2023-02-22 15:57:55,715]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:55,716] Search_Post_And_View_Post - Step 11: click to 'Selenium 2419' in 'Recent Posts' 
+[2023-02-22 15:57:59,815] Search_Post_And_View_Post - Step 12: verify 'Selenium 2419' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:57:59,950]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:57:59,950] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:58:00,114]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:58:00,114] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 6746' in 'Uncategorized' page is deplayed 
+[2023-02-22 15:58:00,227]  -------------------------- PASSED -------------------------- 
+[2023-02-22 15:58:00,232] Edit_Post - Step 01: open admin page
+[2023-02-22 15:58:03,779] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 15:58:07,439] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 2419'
+[2023-02-22 15:58:07,963] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 15:58:08,234] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 15:58:16,175] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 3371'
+[2023-02-22 15:58:20,755] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases3095'
+[2023-02-22 15:58:23,130] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 15:58:24,379] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 15:58:54,605] OS name = windows 10
+[2023-02-22 15:58:54,605] Driver instance name = chromedriver: chrome on windows (5faf3659f586c81821b4e3bea5f688c6)
+[2023-02-22 16:06:32,047] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:07:56,371] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:07:58,609] OS name = windows 10
+[2023-02-22 16:07:58,610] Driver instance name = chromedriver: chrome on windows (06efec8b06609cf0054bcf3da0c650ed)
+[2023-02-22 16:08:03,218] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:32087
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O7A9K07', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[2023-02-22 16:08:10,551] OS name = windows 10
+[2023-02-22 16:08:10,552] Driver instance name = chromedriver: chrome on windows (3c347b85433edc4e19cacf35bafd5846)
+[2023-02-22 16:08:15,493] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:8616
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-O7A9K07', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[2023-02-22 16:09:12,693] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:09:31,992] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:09:32,631] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:09:33,097] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:09:53,475] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:09:53,640]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:09:53,673] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:10:04,489] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:10:26,674] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 5809'
+[2023-02-22 16:10:30,833] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 909'
+[2023-02-22 16:10:35,643] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:10:38,328] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:10:41,136] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:10:54,417]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:10:54,433] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:10:59,284] Search_Post_And_View_Post - Step 02: verify 'Selenium 5809' in 'Posts Search' page is deplayed
+[2023-02-22 16:10:59,467]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:10:59,467] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:10:59,615]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:10:59,615] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:10:59,746]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:10:59,746] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 5809'
+[2023-02-22 16:11:00,180] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:11:00,391] Search_Post_And_View_Post - Step 07: verify 'Selenium 5809' in 'Posts Search' page is deplayed
+[2023-02-22 16:11:00,593]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:00,594] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:11:00,710]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:00,711] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:11:06,325] Search_Post_And_View_Post - Step 10: verify 'Selenium 5809' in 'User Home' page is deplayed 
+[2023-02-22 16:11:06,468]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:06,468] Search_Post_And_View_Post - Step 11: click to 'Selenium 5809' in 'Recent Posts' 
+[2023-02-22 16:11:12,172] Search_Post_And_View_Post - Step 12: verify 'Selenium 5809' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:11:12,283]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:12,283] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:11:12,432]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:12,432] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 909' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:11:12,579]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:11:12,583] Edit_Post - Step 01: open admin page
+[2023-02-22 16:11:17,849] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:11:21,651] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 5809'
+[2023-02-22 16:11:22,475] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:11:22,744] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:11:32,746] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 8314'
+[2023-02-22 16:11:37,054] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases8877'
+[2023-02-22 16:11:39,209] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:11:40,542] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 16:12:10,640] OS name = windows 10
+[2023-02-22 16:12:10,640] Driver instance name = chromedriver: chrome on windows (27d890dafc9aa9ea853fabe4d3d32d3e)
+[2023-02-22 16:14:20,648] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:14:35,920] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:14:36,807] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:14:37,255] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:14:50,665] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:14:51,219]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:14:51,268] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:15:01,503] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:15:17,943] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 6166'
+[2023-02-22 16:15:23,058] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 1693'
+[2023-02-22 16:15:28,296] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:15:31,156] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:15:32,581] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:15:45,906]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:45,927] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:15:51,597] Search_Post_And_View_Post - Step 02: verify 'Selenium 6166' in 'Posts Search' page is deplayed
+[2023-02-22 16:15:51,860]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:51,860] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:15:52,014]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:52,015] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:15:52,143]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:52,143] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 6166'
+[2023-02-22 16:15:52,792] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:15:53,221] Search_Post_And_View_Post - Step 07: verify 'Selenium 6166' in 'Posts Search' page is deplayed
+[2023-02-22 16:15:53,342]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:53,343] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:15:53,447]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:53,447] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:15:58,161] Search_Post_And_View_Post - Step 10: verify 'Selenium 6166' in 'User Home' page is deplayed 
+[2023-02-22 16:15:58,301]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:15:58,301] Search_Post_And_View_Post - Step 11: click to 'Selenium 6166' in 'Recent Posts' 
+[2023-02-22 16:16:02,554] Search_Post_And_View_Post - Step 12: verify 'Selenium 6166' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:16:02,668]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:16:02,669] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:16:02,789]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:16:02,789] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 1693' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:16:02,897]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:16:02,905] Edit_Post - Step 01: open admin page
+[2023-02-22 16:16:07,312] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:16:11,109] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 6166'
+[2023-02-22 16:16:11,643] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:16:11,847] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:16:22,021] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 5176'
+[2023-02-22 16:16:26,527] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases8738'
+[2023-02-22 16:16:29,026] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:16:30,344] Edit_Post - Step 09: verify 'Post Updated' message is diplayed
+[2023-02-22 16:17:00,481] OS name = windows 10
+[2023-02-22 16:17:00,482] Driver instance name = chromedriver: chrome on windows (cc09324f8db1409e49709f5073f6e99f)
+[2023-02-22 16:22:38,916] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:22:57,021] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:23:00,023] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:23:00,805] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:23:23,080] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:23:23,959]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:23:23,986] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:23:29,103] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:23:37,924] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 4591'
+[2023-02-22 16:23:43,352] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 1986'
+[2023-02-22 16:23:49,907] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:23:51,631] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:23:53,518] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:24:03,618]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:03,643] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:24:08,910] Search_Post_And_View_Post - Step 02: verify 'Selenium 4591' in 'Posts Search' page is deplayed
+[2023-02-22 16:24:09,130]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:09,131] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:24:09,466]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:09,466] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:24:09,631]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:09,631] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 4591'
+[2023-02-22 16:24:10,412] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:24:10,656] Search_Post_And_View_Post - Step 07: verify 'Selenium 4591' in 'Posts Search' page is deplayed
+[2023-02-22 16:24:10,765]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:10,766] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:24:10,861]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:10,861] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:24:15,053] Search_Post_And_View_Post - Step 10: verify 'Selenium 4591' in 'User Home' page is deplayed 
+[2023-02-22 16:24:15,185]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:15,186] Search_Post_And_View_Post - Step 11: click to 'Selenium 4591' in 'Recent Posts' 
+[2023-02-22 16:24:19,871] Search_Post_And_View_Post - Step 12: verify 'Selenium 4591' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:24:20,029]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:20,029] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:24:20,147]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:20,147] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 1986' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:24:20,394]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:24:20,397] Edit_Post - Step 01: open admin page
+[2023-02-22 16:24:24,742] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:24:29,152] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 4591'
+[2023-02-22 16:24:29,814] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:24:30,031] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:24:39,949] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 9712'
+[2023-02-22 16:24:44,211] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases3800'
+[2023-02-22 16:24:45,457] OS name = windows 10
+[2023-02-22 16:24:45,459] Driver instance name = chromedriver: chrome on windows (321e3dc743d78cc76ca72b0cf23f494e)
+[2023-02-22 16:26:21,237] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:26:28,076] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:26:28,481] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:26:28,683] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:26:33,406] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:26:33,537]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:33,556] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:26:35,561] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:26:39,965] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 3846'
+[2023-02-22 16:26:41,947] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 1022'
+[2023-02-22 16:26:44,941] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:26:45,952] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:26:48,075] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:26:50,875]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:50,885] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:26:53,825] Search_Post_And_View_Post - Step 02: verify 'Selenium 3846' in 'Posts Search' page is deplayed
+[2023-02-22 16:26:53,938]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:53,939] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:26:54,124]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:54,124] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:26:54,207]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:54,208] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 3846'
+[2023-02-22 16:26:54,426] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:26:54,535] Search_Post_And_View_Post - Step 07: verify 'Selenium 3846' in 'Posts Search' page is deplayed
+[2023-02-22 16:26:54,589]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:54,590] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:26:54,646]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:54,647] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:26:56,505] Search_Post_And_View_Post - Step 10: verify 'Selenium 3846' in 'User Home' page is deplayed 
+[2023-02-22 16:26:56,607]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:56,608] Search_Post_And_View_Post - Step 11: click to 'Selenium 3846' in 'Recent Posts' 
+[2023-02-22 16:26:58,443] Search_Post_And_View_Post - Step 12: verify 'Selenium 3846' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:26:58,512]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:58,512] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:26:58,572]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:58,572] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 1022' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:26:58,631]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:26:58,635] Edit_Post - Step 01: open admin page
+[2023-02-22 16:27:00,611] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:27:02,452] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 3846'
+[2023-02-22 16:27:02,747] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:27:02,867] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:27:07,031] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 701'
+[2023-02-22 16:27:09,714] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases6208'
+[2023-02-22 16:27:11,540] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:27:12,099] Edit_Post - Step 10: open 'Search Post' page
+[2023-02-22 16:27:12,223] Edit_Post - Step 11: verify 'Automation Test 701' in 'Posts Search' page is deplayed
+[2023-02-22 16:27:12,369] OS name = windows 10
+[2023-02-22 16:27:12,369] Driver instance name = chromedriver: chrome on windows (9a30ec8bbe8b5ea8c22cb11d5a09ff69)
+[2023-02-22 16:30:26,455] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:30:33,323] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:30:33,739] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:30:33,951] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:30:37,877] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:30:38,022]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:30:38,041] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:30:40,193] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:30:44,951] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 2523'
+[2023-02-22 16:30:47,666] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 8764'
+[2023-02-22 16:30:51,287] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:30:51,878] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:30:52,525] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:30:56,304]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:30:56,319] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:30:59,381] Search_Post_And_View_Post - Step 02: verify 'Selenium 2523' in 'Posts Search' page is deplayed
+[2023-02-22 16:30:59,477]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:30:59,478] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:30:59,558]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:30:59,558] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:30:59,653]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:30:59,654] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 2523'
+[2023-02-22 16:30:59,967] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:31:00,111] Search_Post_And_View_Post - Step 07: verify 'Selenium 2523' in 'Posts Search' page is deplayed
+[2023-02-22 16:31:00,246]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:00,246] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:31:00,304]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:00,304] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:31:02,309] Search_Post_And_View_Post - Step 10: verify 'Selenium 2523' in 'User Home' page is deplayed 
+[2023-02-22 16:31:02,409]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:02,409] Search_Post_And_View_Post - Step 11: click to 'Selenium 2523' in 'Recent Posts' 
+[2023-02-22 16:31:04,248] Search_Post_And_View_Post - Step 12: verify 'Selenium 2523' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:31:04,318]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:04,318] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:31:04,374]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:04,374] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 8764' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:31:04,436]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:31:04,440] Edit_Post - Step 01: open admin page
+[2023-02-22 16:31:06,358] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:31:08,264] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 2523'
+[2023-02-22 16:31:08,525] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:31:08,666] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:31:12,896] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 3470'
+[2023-02-22 16:31:15,505] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases4128'
+[2023-02-22 16:31:16,918] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:31:17,563] Edit_Post - Step 10: open 'Search Post' page
+[2023-02-22 16:31:17,718] Edit_Post - Step 11: verify 'Automation Test 3470' in 'Posts Search' page is deplayed
+[2023-02-22 16:31:17,869] OS name = windows 10
+[2023-02-22 16:31:17,869] Driver instance name = chromedriver: chrome on windows (2e3c05fbdb777674dbb932d454b6f9e2)
+[2023-02-22 16:33:18,542] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:33:24,197] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:33:24,614] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:33:24,822] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:33:28,750] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:33:28,862]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:28,881] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:33:30,996] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:33:35,460] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 4473'
+[2023-02-22 16:33:37,476] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 4724'
+[2023-02-22 16:33:40,586] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:33:41,584] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:33:42,442] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:33:46,059]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:46,073] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:33:48,086] Search_Post_And_View_Post - Step 02: verify 'Selenium 4473' in 'Posts Search' page is deplayed
+[2023-02-22 16:33:48,178]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:48,179] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:33:48,260]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:48,261] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:33:48,338]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:48,339] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 4473'
+[2023-02-22 16:33:48,642] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:33:48,760] Search_Post_And_View_Post - Step 07: verify 'Selenium 4473' in 'Posts Search' page is deplayed
+[2023-02-22 16:33:48,816]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:48,816] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:33:48,870]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:48,870] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:33:50,854] Search_Post_And_View_Post - Step 10: verify 'Selenium 4473' in 'User Home' page is deplayed 
+[2023-02-22 16:33:50,991]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:50,991] Search_Post_And_View_Post - Step 11: click to 'Selenium 4473' in 'Recent Posts' 
+[2023-02-22 16:33:52,736] Search_Post_And_View_Post - Step 12: verify 'Selenium 4473' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:33:52,798]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:52,799] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:33:52,855]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:52,856] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 4724' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:33:52,954]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:33:52,959] Edit_Post - Step 01: open admin page
+[2023-02-22 16:33:55,008] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:33:56,837] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 4473'
+[2023-02-22 16:33:57,139] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:33:57,263] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:34:01,073] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 9987'
+[2023-02-22 16:34:03,310] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases6844'
+[2023-02-22 16:34:04,895] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:34:05,506] Edit_Post - Step 09: open 'Search Post' page
+[2023-02-22 16:34:05,577] Edit_Post - Step 10: verify 'Automation Test 9987' in 'Posts Search' page is deplayed
+[2023-02-22 16:34:05,727] OS name = windows 10
+[2023-02-22 16:34:05,732] Driver instance name = chromedriver: chrome on windows (729c6fa8f0630d42c21353b8105b6ca6)
+[2023-02-22 16:34:50,822] Pre-Condition - Step 01: Navigate to 'Login Page'
+[2023-02-22 16:34:57,278] Pre-Condition - Step 02: Enter to 'User Name' textbox with value is 'automation' 
+[2023-02-22 16:34:57,676] Pre-Condition - Step 03: Enter to 'Password' textbox with value is 'automation' 
+[2023-02-22 16:34:57,888] Pre-Condition - Step 04: Click to 'Login' button
+[2023-02-22 16:35:01,705] Pre-Condition - Step 05: verify message login successfull
+[2023-02-22 16:35:01,845]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:01,870] Create_New_Post - Step 01: click to 'Posts' link
+[2023-02-22 16:35:03,979] Create_New_Post - Step 02: click to 'Add New' button
+[2023-02-22 16:35:08,444] Create_New_Post - Step 03: enter to 'Add title' textbox with value is 'Selenium 4347'
+[2023-02-22 16:35:10,505] Create_New_Post - Step 04: enter to 'Block Editor' textbox with value is 'Customer DropDown 742'
+[2023-02-22 16:35:14,418] Create_New_Post - Step 05: click to 'Publish' button
+[2023-02-22 16:35:15,542] Create_New_Post - Step 06: click to 'RePublish' button
+[2023-02-22 16:35:16,425] Create_New_Post - Step 07: verify 'Post published.' message is deplayed
+[2023-02-22 16:35:19,825]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:19,841] Search_Post_And_View_Post - Step 01: open 'Search Post' page
+[2023-02-22 16:35:21,914] Search_Post_And_View_Post - Step 02: verify 'Selenium 4347' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:22,017]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:22,017] Search_Post_And_View_Post - Step 03: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:22,115]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:22,116] Search_Post_And_View_Post - Step 04: verify '2023/02/22' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:22,222]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:22,223] Search_Post_And_View_Post - Step 05: sendkey to 'Search Post' textbox with value is 'Selenium 4347'
+[2023-02-22 16:35:22,731] Search_Post_And_View_Post - Step 06: click to 'Search Post' button
+[2023-02-22 16:35:22,881] Search_Post_And_View_Post - Step 07: verify 'Selenium 4347' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:22,945]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:22,946] Search_Post_And_View_Post - Step 08: verify 'automation' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:23,010]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:23,010] Search_Post_And_View_Post - Step 09: open 'User' page
+[2023-02-22 16:35:25,009] Search_Post_And_View_Post - Step 10: verify 'Selenium 4347' in 'User Home' page is deplayed 
+[2023-02-22 16:35:25,113]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:25,113] Search_Post_And_View_Post - Step 11: click to 'Selenium 4347' in 'Recent Posts' 
+[2023-02-22 16:35:26,888] Search_Post_And_View_Post - Step 12: verify 'Selenium 4347' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:35:26,947]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:26,947] Search_Post_And_View_Post - Step 13: verify 'automation' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:35:27,004]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:27,004] Search_Post_And_View_Post - Step 14: verify 'Customer DropDown 742' in 'Uncategorized' page is deplayed 
+[2023-02-22 16:35:27,092]  -------------------------- PASSED -------------------------- 
+[2023-02-22 16:35:27,096] Edit_Post - Step 01: open admin page
+[2023-02-22 16:35:29,021] Edit_Post - Step 02: open 'Search Post' page
+[2023-02-22 16:35:30,802] Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is 'Selenium 4347'
+[2023-02-22 16:35:31,079] Edit_Post - Step 04: click to 'Search Post' button
+[2023-02-22 16:35:31,190] Edit_Post - Step 05: click to 'Edit' link
+[2023-02-22 16:35:34,993] Edit_Post - Step 06: enter to 'Add title' textbox with value is 'Automation Test 1377'
+[2023-02-22 16:35:37,371] Edit_Post - Step 07: enter to 'Block Editor' textbox with value is 'Test Cases1470'
+[2023-02-22 16:35:38,534] Edit_Post - Step 08: click to 'Update' button
+[2023-02-22 16:35:38,955] Edit_Post - Step 09: open 'Search Post' page
+[2023-02-22 16:35:39,511] Edit_Post - Step 10: verify 'Automation Test 1377' in 'Posts Search' page is deplayed
+[2023-02-22 16:35:39,671] OS name = windows 10
+[2023-02-22 16:35:39,672] Driver instance name = chromedriver: chrome on windows (e511e27f1ef62b2023e098f04305a088)

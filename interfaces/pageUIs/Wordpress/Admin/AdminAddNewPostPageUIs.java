@@ -5,6 +5,8 @@ public class AdminAddNewPostPageUIs {
 	public static final String ADD_TITLE_TEXTBOX ="xpath=//h1[@aria-label='Add title']";
 	public static final String PUBLISH_BUTTON ="xpath=//button[text()='Publish']";
 	public static final String REPUBLISH_BUTTON ="xpath=//div[contains(@class,'post-publish-panel__content')]//preceding-sibling::div//button[text()='Publish']";
-	public static final String POST_PUBLISHED_MESSAGE ="xpath=//div[@class='components-snackbar__content' and contains(text(),'%s')]";
+	public static final String POST_PUBLISHED_MESSAGE ="xpath=//div[@class='components-snackbar__content' and text()='Post published.']";
+	public static final String UPDATE_BUTTON ="xpath=//button[text()='Update']";
+	public static final String UPDATED_MESSAGE_SUCCESS ="xpath=//div[@class='components-snackbar__content']";
 
 }

@@ -39,6 +39,11 @@ public class AdminPostsSearchPO extends BasePage {
 		waitForElementVisible(driver, AdminPostsSearchPageUIs.PUBLISHED_DATE, addTitle);
 		return getElementText(driver, AdminPostsSearchPageUIs.PUBLISHED_DATE, addTitle).contains(currentDay);
 	}
+	public AdminAddNewPostPO clickToEditLink(String addTitle) {
+		waitForElementClickable(driver, AdminPostsSearchPageUIs.EDIT_LINK,addTitle);
+		clickToElement(driver, AdminPostsSearchPageUIs.EDIT_LINK,addTitle);
+		return PageGeneratorManager.getAdminAddNewPostPO(driver);
+	}
 	
 
 }
