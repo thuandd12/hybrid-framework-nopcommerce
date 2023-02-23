@@ -34,9 +34,13 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName) {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();;
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,GlobleConstaints.PROJECT_PATH + "\\brownserLogs\\Firefoxlog.log");
 			driver = new FirefoxDriver();
 		}else if (browserName.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -70,9 +74,13 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName, String appURl ) {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
 			driver = new ChromeDriver();
 		}else if(browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();;
+			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,GlobleConstaints.PROJECT_PATH + "\\brownserLogs\\Firefoxlog.log");
 			driver = new FirefoxDriver();
 		}else if (browserName.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
