@@ -35,7 +35,7 @@
 		</layout>
 	</appender>
 
-	<category name="wordpress.adim">
+	<category name="com.saucesite">
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />

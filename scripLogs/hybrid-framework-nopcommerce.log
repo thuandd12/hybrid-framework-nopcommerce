@@ -986,3 +986,107 @@ Driver info: driver.version: RemoteWebDriver
 [2023-02-22 16:35:39,511] Edit_Post - Step 10: verify 'Automation Test 1377' in 'Posts Search' page is deplayed
 [2023-02-22 16:35:39,671] OS name = windows 10
 [2023-02-22 16:35:39,672] Driver instance name = chromedriver: chrome on windows (e511e27f1ef62b2023e098f04305a088)
+[2023-02-28 17:56:05,788] Pre-ceding - Step 01 : open Login page
+[2023-02-28 17:56:10,899] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 17:56:11,211] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 17:56:11,401] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 17:56:11,651] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 17:56:11,936]  -------------------------- PASSED -------------------------- 
+[2023-02-28 17:56:11,947] OS name = windows 10
+[2023-02-28 17:56:11,948] Driver instance name = chromedriver: chrome on windows (1e25f95f6ee3af71a03bbd7de1653923)
+[2023-02-28 18:09:16,467] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:09:20,599] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:09:20,914] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:09:21,142] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:09:21,432] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:09:21,672]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:09:21,673] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:09:21,847]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:09:21,864] OS name = windows 10
+[2023-02-28 18:09:21,864] Driver instance name = chromedriver: chrome on windows (b6be9de2764c154980ee1ed246e67188)
+[2023-02-28 18:29:32,966] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:29:38,595] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:29:38,848] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:29:39,061] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:29:39,302] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:29:39,662]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:29:39,662] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:29:39,851]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:29:39,864] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:29:40,118]  -------------------------- FAILED -------------------------- 
+[2023-02-28 18:29:40,122] OS name = windows 10
+[2023-02-28 18:29:40,123] Driver instance name = chromedriver: chrome on windows (fd286b71c454b25275e8cc222b837ea6)
+[2023-02-28 18:30:22,834] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:30:26,811] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:30:27,131] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:30:27,331] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:30:27,616] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:30:27,863]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:30:27,864] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:30:28,047]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:30:28,053] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:30:28,323]  -------------------------- FAILED -------------------------- 
+[2023-02-28 18:30:28,328] OS name = windows 10
+[2023-02-28 18:30:28,329] Driver instance name = chromedriver: chrome on windows (3718952ec5b73265f660307acee19585)
+[2023-02-28 18:31:58,395] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:32:03,264] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:32:03,564] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:32:03,751] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:32:03,999] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:32:04,301]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:32:04,302] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:32:04,498]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:32:04,503] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:32:04,817]  -------------------------- FAILED -------------------------- 
+[2023-02-28 18:32:04,824] OS name = windows 10
+[2023-02-28 18:32:04,825] Driver instance name = chromedriver: chrome on windows (be6e470d6fca8046c2536a5d65de7b5a)
+[2023-02-28 18:33:38,561] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:33:42,097] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:33:42,366] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:33:42,569] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:33:42,838] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:33:43,099]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:33:43,099] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:33:43,289]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:33:43,295] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:33:43,564]  -------------------------- FAILED -------------------------- 
+[2023-02-28 18:33:43,570] OS name = windows 10
+[2023-02-28 18:33:43,570] Driver instance name = chromedriver: chrome on windows (748f82cdba6e86b98df2c3d872416de1)
+[2023-02-28 18:55:13,386] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:55:18,772] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:55:19,072] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:55:19,258] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:55:19,524] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:55:19,810]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:55:19,810] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:55:20,031]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:55:20,043] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:55:20,350]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:55:20,353] OS name = windows 10
+[2023-02-28 18:55:20,354] Driver instance name = chromedriver: chrome on windows (e16478e6898e2a5caa0fbba4adef0ca3)
+[2023-02-28 18:57:33,350] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:57:38,128] Pre-ceding - Step 01 : enter to 'Username' textbox with value is ' + username + ' 
+[2023-02-28 18:57:38,362] Pre-ceding - Step 02 : enter to 'Password' textbox with value is ' + password + ' 
+[2023-02-28 18:57:38,605] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:57:38,899] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:57:39,183]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:57:39,183] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:57:39,353]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:57:39,359] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:57:39,569]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:57:39,572] OS name = windows 10
+[2023-02-28 18:57:39,572] Driver instance name = chromedriver: chrome on windows (3de1f796c8bc800ef6083c9a276d1b4a)
+[2023-02-28 18:59:11,167] Pre-ceding - Step 01 : open Login page
+[2023-02-28 18:59:15,638] Pre-ceding - Step 01 : enter to 'Username' textbox with value is 'standard_user' 
+[2023-02-28 18:59:15,987] Pre-ceding - Step 02 : enter to 'Password' textbox with value is 'secret_sauce' 
+[2023-02-28 18:59:16,212] Pre-ceding - Step 03 : click to 'Login' button
+[2023-02-28 18:59:16,512] Sort_01_By_Name - Step 01 : verify product name from A to Z
+[2023-02-28 18:59:16,767]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:59:16,767] Sort_01_By_Name - Step 02 : verify product name from Z to A
+[2023-02-28 18:59:16,942]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:59:16,948] Sort_02_Price - Step 01 : verify product price from low to high
+[2023-02-28 18:59:17,156]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:59:17,156] Sort_02_Price - Step 02 : verify product price from high to low
+[2023-02-28 18:59:17,338]  -------------------------- PASSED -------------------------- 
+[2023-02-28 18:59:17,340] OS name = windows 10
+[2023-02-28 18:59:17,341] Driver instance name = chromedriver: chrome on windows (509a6b4c518b21b072750c39fe4a58f5)

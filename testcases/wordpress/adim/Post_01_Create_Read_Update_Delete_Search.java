@@ -116,7 +116,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		log.info("Edit_Post - Step 02: open 'Search Post' page");
 		adminPostsSearch = adminAddNewPost.openSearchPostPageURL(searchPostURL);
 		
-		log.info("Edit_Post - Step 03: sendkey to 'Search Post' textbox with value is '"+ addTitle +"'");
+		log.info("Edit_Post - Step 03: sendkey to 'Se arch Post' textbox with value is '"+ addTitle +"'");
 		adminPostsSearch.sendkeyToSearchPostTextbox(addTitle);
 		
 		log.info("Edit_Post - Step 04: click to 'Search Post' button");

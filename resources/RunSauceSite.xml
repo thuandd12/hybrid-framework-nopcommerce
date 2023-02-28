@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Wordpress">
+	<listeners>
+		<listener class-name="commons.MethodListener"></listener>
+	</listeners>
+	<parameter name="urlAdmin" value="http://localhost/wp-admin/" />
+	<parameter name="urlUser" value="http://localhost/" />
+
+	<test name="Run on Chrome">
+	<parameter name="browser" value="chrome" />
+	
+	<classes>
+      <class name="wordpress.adim.Post_01_Create_Read_Update_Delete_Search"/>
+    </classes>
+	
+	<!-- <packages>
+		<package name="wordpress.adim" />
+	</packages> -->
+
+</test>
+
+</suite> 
